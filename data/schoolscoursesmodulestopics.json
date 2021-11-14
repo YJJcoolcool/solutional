@@ -3,6 +3,7 @@
         "Republic Polytechnic (RP)":{
             "description":"Republic Polytechnic is an institution of higher learning in Woodlands, Singapore.",
             "url":"RP",
+            "img":"",
             "courses":{
                 "SOI - Diploma in Infocomm Security Management (R55)":{
                     "description":"Infocomm Security Management",

@@ -1,5 +1,6 @@
 $(document).ready(function() 
 { 
+    console.log("Hai")
     $.ajax({
         type: "GET",
         url: "https://yjjcoolcool.github.io/solutional/data/schoolscoursesmodulestopics.json",

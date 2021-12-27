@@ -4,10 +4,11 @@ $(document).ready(function()
     console.log("Hai")
     $.ajax({
         type: "GET",
-        url: "https://yjjcoolcool.github.io/solutional/data/schoolscoursesmodulestopics.json",
+        url: "../data/modules.json",
+        //url: "https://yjjcoolcool.github.io/solutional/data/modules.json",
         success: function (response) {
-            schoolscoursesmodulestopics=response;
-            displaySchools();
+            modules=response;
+            displayModules();
         },
         error: function (obj, textStatus, errorThrown) {
             console.log("Error "+textStatus+": "+errorThrown);
@@ -15,8 +16,8 @@ $(document).ready(function()
     });
 });
 
-function displaySchools(){
-    Object.keys(schoolscoursesmodulestopics['schools']).forEach((element)=>{
+function displayModules(){
+    Object.keys(modules).forEach((element)=>{
         console.log(element)
     })
 }

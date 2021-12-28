@@ -1,14 +1,12 @@
-var schoolscoursesmodulestopics;
 $(document).ready(function() 
-{ 
-    console.log("Hai")
+{
     $.ajax({
         type: "GET",
-        url: "./data/modules.json",
+        url: "/data/modules.json",
         //url: "https://yjjcoolcool.github.io/solutional/data/modules.json",
         success: function (response) {
-            modules=response;
-            displayModules();
+            document.querySelector(".container .row p").remove();
+            displayModules(response);
         },
         error: function (obj, textStatus, errorThrown) {
             console.log("Error "+textStatus+": "+errorThrown);
@@ -16,8 +14,14 @@ $(document).ready(function()
     });
 });
 
-function displayModules(){
+function displayModules(modules){
+    var cardtemplate = document.querySelector('#cardtemplate');
+    var modulelist = document.querySelector('.container .row');
     Object.keys(modules).forEach((element)=>{
-        console.log(element)
+        var clone = cardtemplate.content.cloneNode(true);
+        clone.querySelector(".card-title").innerText=element;
+        (modules[element].description) ? clone.querySelector(".card-text").innerText=modules[element].description : null;
+        clone.querySelector("a").href="module?uid="+modules[element].uid;
+        modulelist.appendChild(clone)
     })
 }

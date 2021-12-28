@@ -2,7 +2,7 @@ $(document).ready(function()
 {
     $.ajax({
         type: "GET",
-        url: "/data/modules.json",
+        url: "/solutional/data/modules.json",
         //url: "https://yjjcoolcool.github.io/solutional/data/modules.json",
         success: function (response) {
             document.querySelector(".container .row p").remove();

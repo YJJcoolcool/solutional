@@ -3,7 +3,7 @@
         "name": "LP1",
         "questions": [
             {
-                "question": "Sam performed a vulnerability assessment on his network and no potential problem was reported. He runs another utility that executes exploits against his system and the utility successfully executes three known exploits against his network. What kind of results did Sam receive from his vulnerability assessment?",
+                "question": "Sam performed a vulnerability scan on his network and no problems were reported. He runs another tool that executes exploits against his system and the tool managed to execute three known exploits against his network. What kind of results did Sam receive from his vulnerability scan?",
                 "answers": [
                     "True Positive",
                     "True Negative",
@@ -12,12 +12,30 @@
                 ]
             },
             {
-                "question": "Which of the following is/are monitored using host-based intrusion detection systems?",
+                "question": "Which of the following is monitored using host-based intrusion detection systems (HIDS)?",
                 "answers": [
                     "Computer Performance",
                     "Computer Storage Space",
                     "[]File System Changes",
                     "Network Topology Change"
+                ]
+            },
+            {
+                "question": "Patricia would like to monitor her network for all incoming HTTP traffic to the HTTP server and all outgoing SSH traffic to an SFTP server outside the network using Wireshark. Which filter should she use?",
+                "answers": [
+                    "tcp.srcport==80 && tcp.dstport==22",
+                    "tcp.srcport==80 && tcp.srcport==23",
+                    "[]tcp.dstport==80 && tcp.dstport==22",
+                    "tcp.srcport==21 && tcp.dstport==80"
+                ]
+            },
+            {
+                "question": "Which of the following statements is true regarding a Network-based Intrusion Detection System (NIDS)?",
+                "answers": [
+                    "NIDS only inspects packet headers of packets passing through the network.",
+                    "[]NIDS is able to detect malicious file download by doing content inspection.",
+                    "NIDS detects file modifications and deletions in a system to detect an attack.",
+                    "NIDS is the only networking device that provides protection in a network."
                 ]
             }
         ]
@@ -44,7 +62,7 @@
                 ]
             },
             {
-                "question": "Statistical anomaly detect is also ___",
+                "question": "Statistical anomaly detection is also ___",
                 "answers": [
                     "[]used in detecting port scanning activities",
                     "used for detecting cross-site scripting attacks",

@@ -1,6 +1,26 @@
 {
     "1": {
-        "name": "LP1"
+        "name": "LP1",
+        "questions": [
+            {
+                "question": "Sam performed a vulnerability assessment on his network and no potential problem was reported. He runs another utility that executes exploits against his system and the utility successfully executes three known exploits against his network. What kind of results did Sam receive from his vulnerability assessment?",
+                "answers": [
+                    "True Positive",
+                    "True Negative",
+                    "False Positive",
+                    "[]False Negative"
+                ]
+            },
+            {
+                "question": "Which of the following is/are monitored using host-based intrusion detection systems?",
+                "answers": [
+                    "Computer Performance",
+                    "Computer Storage Space",
+                    "[]File System Changes",
+                    "Network Topology Change"
+                ]
+            }
+        ]
     },
     "2": {
         "name": "LP2"

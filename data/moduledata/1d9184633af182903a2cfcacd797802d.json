@@ -1,5 +1,5 @@
-{
-    "1": {
+[
+    {
         "name": "LP1",
         "questions": [
             {
@@ -22,10 +22,36 @@
             }
         ]
     },
-    "2": {
-        "name": "LP2"
-    },
-    "3": {
-        "name": "LP3"
+    {
+        "name": "LP2",
+        "questions": [
+            {
+                "question": "Which of the following is the most suitable detection method for port scanning attack?",
+                "answers": [
+                    "Host-based anomaly detection",
+                    "Protocol anomaly detection",
+                    "Signature-based detection",
+                    "[]Non-payload anomaly detection"
+                ]
+            },
+            {
+                "question": "Which of the following nmap timers will likely be detected quickly by the intrusion detection system?",
+                "answers": [
+                    "-T0 Paranoid",
+                    "-T1 Sneaky",
+                    "[]-T5 Insane",
+                    "None of the above"
+                ]
+            },
+            {
+                "question": "Statistical anomaly detect is also ___",
+                "answers": [
+                    "[]used in detecting port scanning activities",
+                    "used for detecting cross-site scripting attacks",
+                    "used to flag out normal network traffic activity",
+                    "a content-matching detection method"
+                ]
+            }
+        ]
     }
-}
+]

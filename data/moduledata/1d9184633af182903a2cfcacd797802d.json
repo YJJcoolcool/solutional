@@ -53,5 +53,19 @@
                 ]
             }
         ]
+    },
+    {
+        "name": "LP3",
+        "questions": [
+            {
+                "question": "Which of the following activities is NOT useful in evading signature-based intrusion detection systems?",
+                "answers": [
+                    "Create different variants of a malware",
+                    "Payload encryption",
+                    "[]SQL injection to bypass login",
+                    "IP packet fragmentation"
+                ]
+            }
+        ]
     }
 ]

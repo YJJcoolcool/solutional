@@ -6,11 +6,15 @@ var random = getparams.get("random");
 var numqn = getparams.get("numqn");
 var qndistribution = []
 var currentqn = -1;
+var correctqns = 0;
 var qnlist = [];
 var answers;
+//var audio = new Audio('/solutional/assets/danger.mp3');
 
 $(document).ready(function() 
 {
+    document.getElementById('numqn').value=numqn;
+    document.getElementById('uid').value=uid;
     $.ajax({
         type: "GET",
         url: "/solutional/data/moduledata/"+uid+".json",
@@ -50,12 +54,17 @@ function process(data){
             j+=1;
         }
     }
+    document.getElementById('progress').max=numqn;
+    document.getElementById('progress').value=currentqn;
+    document.getElementById('correctqns').innerHTML = correctqns+"/"+numqn+" Questions Correct";
+    document.getElementById('score').value=correctqns;
     nextQn()
 }
 
 function nextQn(){
     currentqn+=1
     document.querySelectorAll('.clone').forEach(e => e.remove());
+    //document.getElementById('socialcredit').style.display = 'none';
     document.getElementById('nextqn').disabled=true;
     document.getElementById('nextqn').innerHTML='Waiting for answer...';
     document.getElementById('qnnum').innerHTML='Question '+(currentqn+1)+" of "+numqn;
@@ -69,7 +78,7 @@ function nextQn(){
         answers[j] = temp;
     }
     var answerbuttontemplate = document.querySelector('#answerbuttontemplate');
-    var answerlist = document.querySelector('.container .row');
+    var answerlist = document.getElementById('buttonarea');
     var count = 0;
     answers.forEach((element)=>{
         element = element.replace('[]','')
@@ -83,13 +92,27 @@ function nextQn(){
 }
 
 function checkAnswer(id){
-    if (answers[id].startsWith('[]')){
-        document.getElementById(id).classList.remove('btn-dark')
-        document.getElementById(id).classList.add('btn-success')
-    } else {
-        document.getElementById(id).classList.remove('btn-dark')
-        document.getElementById(id).classList.add('btn-danger')
+    if (document.getElementById('nextqn').disabled){
+        if (answers[id].startsWith('[]')){
+            document.getElementById(id).classList.remove('btn-dark')
+            document.getElementById(id).classList.add('btn-success')
+            correctqns+=1
+            document.getElementById('correctqns').innerHTML = correctqns+"/"+numqn+" Questions Correct";
+            document.getElementById('score').value=correctqns;
+        } else {
+            document.getElementById(id).classList.remove('btn-dark')
+            document.getElementById(id).classList.add('btn-danger')
+            /*document.getElementById('socialcredit').style.display = 'block';
+            setTimeout(()=>{document.getElementById('socialcredit').style.display = 'none';},5500)
+            audio.play();*/
+        }
+        document.getElementById('progress').value=currentqn+1;
+        if (currentqn>=numqn-1) {
+            document.getElementById('nextqn').style.display = 'none';
+            document.getElementById('submit').style.display = 'block';
+        } else {
+            document.getElementById('nextqn').innerHTML='Continue to next question';
+        }
+        document.getElementById('nextqn').disabled=false;
     }
-    document.getElementById('nextqn').innerHTML='Continue to next question';
-    document.getElementById('nextqn').disabled=false;
 }

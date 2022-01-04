@@ -14,9 +14,38 @@
     <!-- Script to list and display all topics -->
     <script src="/solutional/assets/js/startquiz.js"></script>
     <style>
+        .container>.row>div{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .container>.row p{
+            margin: 0;
+        }
+
+        .container>.row progress{
+            margin-left: 5%;
+        }
+
         button{
             width: 100%;
             height: 100%;
+        }
+
+        #socialcredit{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            display: none;
+        }
+        #socialcredit>*{
+            position: relative;
+            top: -50%;
+            left: -50%;
+        }
+
+        form input{
+            width: 100%;
         }
     </style>
 </head>
@@ -41,12 +70,19 @@
     </nav>
     <br>
     <div class="container">
-        <p id="qnnum">Question 1 of 20</p>
+        <div class="row">
+            <div class="col-7">
+                <p id="qnnum"></p>
+                <progress id="progress" value="0" max="20"></progress>
+            </div>
+            <p id="correctqns" class="col-5" style="text-align: right"></p>
+        </div>
+        <br>
         <h2 id="question">Loading question...</h2>
         <br>
         <hr>
         <br>
-        <div class="row">
+        <div class="row" id="buttonarea">
             <template id="answerbuttontemplate">
                 <div class="col-sm-6 p-1">
                     <button id="1" onclick="checkAnswer(this.id)" type="button" class="btn btn-dark py-3"></button>
@@ -56,6 +92,15 @@
         <br>
         <hr>
         <button id="nextqn" onclick="nextQn()" type="button" class="btn btn-secondary py-3" disabled>Waiting for answer...</button>
+        <form method="get" action="/solutional/finish">
+            <input type="hidden" name="uid" id="uid">
+            <input type="hidden" name="score" id="score">
+            <input type="hidden" name="numqn" id="numqn">
+            <input id="submit" type="submit" value="Finish" style="display: none;" class="btn btn-secondary py-3">
+        </form>
     </div>
+    <!--<div id="socialcredit">
+        <img src="https://i.ytimg.com/vi/8k8dmZ5c0vI/maxresdefault.jpg" width="300px">
+    </div>-->
 </body>
 </html>

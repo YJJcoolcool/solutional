@@ -14,12 +14,9 @@
     <!-- Script to list and display all topics -->
     <script src="/solutional/assets/js/startquiz.js"></script>
     <style>
-        table tr td {
-            vertical-align: top;
-            padding-right: 1em;
-        }
-        summary,.nodesc {
-            font-weight: bold;
+        button{
+            width: 100%;
+            height: 100%;
         }
     </style>
 </head>
@@ -44,52 +41,16 @@
     </nav>
     <br>
     <div class="container">
-        <h1>Select Topics</h1>
-        <p>Select the topics you want to test:</p>
+        <h2 id="question">Loading question...</h2>
+        <br>
         <hr>
+        <br>
         <div class="row">
-            <p>Loading topics...</p>
-            <form method="get" action="/solutional/startquiz">
-                <input type="hidden" name="uid" id="uid" value="">
-                <input type="hidden" name="topics" id="topics" value="">
-                <table>
-                    <template id="checkboxtemplate">
-                        <tr>
-                            <td>
-                                <input type="checkbox" class="topic" id="" onchange="updateOptions()">
-                            </td>
-                            <td>
-                                <label for="">
-                                    <details>
-                                        <summary></summary>
-                                        <p></p>
-                                    </details>
-                                    <p class="nodesc"></p>
-                                </label>
-                            </td>
-                        </tr>
-                    </template>
-                </table>
-                <hr>
-                <table>
-                    <tr>
-                        <td>
-                            <input type="checkbox" name="random" id="random">
-                        </td>
-                        <td>
-                            <label for="random">
-                                <details>
-                                    <summary>Randomise Topics</summary>
-                                    <p>If enabled, all questions will be randomised and not categorised into topics and topic numbers will not be shown in questions.<br>Question orders and options will still be randomised.</p>
-                                </details>
-                            </label>
-                        </td>
-                    </tr>
-                </table>
-                <br>
-                <br>
-                <input type="submit" value="Start!" onclick="return checkForm()">
-            </form>
+            <template id="answerbuttontemplate">
+                <div class="col-sm-6 p-1">
+                    <button id="1" onclick="alert(this.id)" type="button" class="btn btn-dark py-3">Hello</button>
+                </div>
+            </template>
         </div>
     </div>
 </body>

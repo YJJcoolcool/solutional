@@ -3,10 +3,13 @@ var getparams = new URLSearchParams(location.search.substring(1));
 var uid = getparams.get("uid");
 var topics = getparams.get("topics");
 var random = getparams.get("random");
+var numqn = getparams.get("numqn");
+var qndistribution = []
+var currentqn = 0;
+var qnlist = [];
 
 $(document).ready(function() 
 {
-    document.querySelector("#uid").value=uid;
     $.ajax({
         type: "GET",
         url: "/solutional/data/moduledata/"+uid+".json",
@@ -20,11 +23,30 @@ $(document).ready(function()
 });
 
 function process(data){
-    var datatopics = Object.keys(data)
-    console.log(topics)
-    for (i=0; i<datatopics.length; i++){
-        if (topics[i]=="1") {
-            quizdata[datatopics[i]]=data[datatopics[i]]
+    console.log(data)
+    // Distribute the number of questions for each section
+    var numsec = (topics.match(/1/g) || []).length;
+    var remainderqns = numqn%numsec;
+    for (var i=0; i < numsec; i++){
+        qndistribution.push(Math.floor(numqn/numsec))
+        if (remainderqns>0){
+            qndistribution[qndistribution.length-1]+=1
+            remainderqns-=1
         }
     }
+    console.log(qndistribution)
+    var j=0;
+    for (var i=0; i < topics.length; i++){
+        if (topics[i]==="1"){
+            for (var k=0; k < qndistribution[j]; k++){
+                qnlist.push(data[i]['questions'][Math.floor(Math.random()*data[i]['questions'].length)])
+            }
+            j+=1;
+        }
+    }
+    nextQn()
+}
+
+function nextQn(){
+
 }

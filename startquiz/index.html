@@ -41,6 +41,7 @@
     </nav>
     <br>
     <div class="container">
+        <p id="qnnum">Question 1 of 20</p>
         <h2 id="question">Loading question...</h2>
         <br>
         <hr>
@@ -48,10 +49,13 @@
         <div class="row">
             <template id="answerbuttontemplate">
                 <div class="col-sm-6 p-1">
-                    <button id="1" onclick="alert(this.id)" type="button" class="btn btn-dark py-3">Hello</button>
+                    <button id="1" onclick="checkAnswer(this.id)" type="button" class="btn btn-dark py-3"></button>
                 </div>
             </template>
         </div>
+        <br>
+        <hr>
+        <button id="nextqn" onclick="nextQn()" type="button" class="btn btn-secondary py-3" disabled>Waiting for answer...</button>
     </div>
 </body>
 </html>

@@ -9,6 +9,7 @@ var currentqn = -1;
 var correctqns = 0;
 var qnlist = [];
 var answers;
+var shortforms = ["wotf","Which of the following"]
 //var audio = new Audio('/solutional/assets/danger.mp3');
 
 $(document).ready(function() 
@@ -68,7 +69,11 @@ function nextQn(){
     document.getElementById('nextqn').disabled=true;
     document.getElementById('nextqn').innerHTML='Waiting for answer...';
     document.getElementById('qnnum').innerHTML='Question '+(currentqn+1)+" of "+numqn;
-    document.querySelector("#question").innerHTML = qnlist[currentqn]['question'];
+    var question = qnlist[currentqn]['question'];
+    for (var i=0; i<shortforms.length/2; i++){
+        question = question.replace("@`"+shortforms[i*2],shortforms[i*2+1])
+    }
+    document.querySelector("#question").innerHTML = question;
     answers = qnlist[currentqn]['answers'];
     // Randomise Answers
     for (var i = answers.length - 1; i > 0; i--) {

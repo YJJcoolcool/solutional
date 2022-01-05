@@ -12,7 +12,7 @@
                 ]
             },
             {
-                "question": "Which of the following is monitored using host-based intrusion detection systems (HIDS)?",
+                "question": "@`wotf is monitored using host-based intrusion detection systems (HIDS)?",
                 "answers": [
                     "Computer Performance",
                     "Computer Storage Space",
@@ -30,12 +30,30 @@
                 ]
             },
             {
-                "question": "Which of the following statements is true regarding a Network-based Intrusion Detection System (NIDS)?",
+                "question": "@`wotf statements is true regarding a Network-based Intrusion Detection System (NIDS)?",
                 "answers": [
                     "NIDS only inspects packet headers of packets passing through the network.",
                     "[]NIDS is able to detect malicious file download by doing content inspection.",
                     "NIDS detects file modifications and deletions in a system to detect an attack.",
                     "NIDS is the only networking device that provides protection in a network."
+                ]
+            },
+            {
+                "question": "@`wotf statements is a true negative security alert classification?",
+                "answers": [
+                    "[]Normal network traffic is ignored and false alerts are not being triggered.",
+                    "An alert is verified to be an actual security incident",
+                    "Network attacks are not being detected by the intrusion detection system",
+                    "An alert is triggered even though there is no security incident"
+                ]
+            },
+            {
+                "question": "@`wotf detection methods uses established baselines and behaviours for detecting intrusions?",
+                "answers": [
+                    "Host-based Detection",
+                    "Network-based Detection",
+                    "Signature-based Detection",
+                    "Anomaly-based Detection"
                 ]
             }
         ]
@@ -44,7 +62,7 @@
         "name": "LP2",
         "questions": [
             {
-                "question": "Which of the following is the most suitable detection method for port scanning attack?",
+                "question": "@`wotf is the most suitable detection method for port scanning attack?",
                 "answers": [
                     "Host-based anomaly detection",
                     "Protocol anomaly detection",
@@ -53,7 +71,7 @@
                 ]
             },
             {
-                "question": "Which of the following nmap timers will likely be detected quickly by the intrusion detection system?",
+                "question": "@`wotf nmap timers will likely be detected quickly by the intrusion detection system?",
                 "answers": [
                     "-T0 Paranoid",
                     "-T1 Sneaky",
@@ -69,6 +87,15 @@
                     "used to flag out normal network traffic activity",
                     "a content-matching detection method"
                 ]
+            },
+            {
+                "question": "You were alerted to a large influx of network traffic to a particular server in your network. Upon investigating the network packets captured, you noticed that there were many SYN packets being sent to multiple ports. What kind of malicious activity did the attacker perform?",
+                "answers": [
+                    "SYN Flood Attack",
+                    "IP Fragmentation",
+                    "[]Port Scanning",
+                    "ARP Spoofing"
+                ]
             }
         ]
     },
@@ -76,12 +103,21 @@
         "name": "LP3",
         "questions": [
             {
-                "question": "Which of the following activities is NOT useful in evading signature-based intrusion detection systems?",
+                "question": "@`wotf activities is NOT useful in evading signature-based intrusion detection systems?",
                 "answers": [
                     "Create different variants of a malware",
                     "Payload encryption",
                     "[]SQL injection to bypass login",
                     "IP packet fragmentation"
+                ]
+            },
+            {
+                "question": "@`wotf is used to perform session hijacking?",
+                "answers": [
+                    "SQL injection",
+                    "IP Fragmentation",
+                    "[]Cross-site scripting",
+                    "Drive-by download"
                 ]
             }
         ]

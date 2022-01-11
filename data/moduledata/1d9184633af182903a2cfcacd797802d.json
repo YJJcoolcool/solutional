@@ -4,7 +4,8 @@
         "questions": [
             {
                 "question": "Sam performed a vulnerability scan on his network and no problems were reported. He runs another tool that executes exploits against his system and the tool managed to execute three known exploits against his network. What kind of results did Sam receive from his vulnerability scan?",
-                "answers": [
+                "type": 1,
+                "options": [
                     "True Positive",
                     "True Negative",
                     "False Positive",
@@ -13,7 +14,8 @@
             },
             {
                 "question": "@`wotf is monitored using host-based intrusion detection systems (HIDS)?",
-                "answers": [
+                "type": 1,
+                "options": [
                     "Computer Performance",
                     "Computer Storage Space",
                     "[]File System Changes",
@@ -22,7 +24,8 @@
             },
             {
                 "question": "Patricia would like to monitor her network for all incoming HTTP traffic to the HTTP server and all outgoing SSH traffic to an SFTP server outside the network using Wireshark. Which filter should she use?",
-                "answers": [
+                "type": 1,
+                "options": [
                     "tcp.srcport==80 && tcp.dstport==22",
                     "tcp.srcport==80 && tcp.srcport==23",
                     "[]tcp.dstport==80 && tcp.dstport==22",
@@ -31,7 +34,8 @@
             },
             {
                 "question": "@`wotf statements is true regarding a Network-based Intrusion Detection System (NIDS)?",
-                "answers": [
+                "type": 1,
+                "options": [
                     "NIDS only inspects packet headers of packets passing through the network.",
                     "[]NIDS is able to detect malicious file download by doing content inspection.",
                     "NIDS detects file modifications and deletions in a system to detect an attack.",
@@ -40,7 +44,8 @@
             },
             {
                 "question": "@`wotf statements is a true negative security alert classification?",
-                "answers": [
+                "type": 1,
+                "options": [
                     "[]Normal network traffic is ignored and false alerts are not being triggered.",
                     "An alert is verified to be an actual security incident",
                     "Network attacks are not being detected by the intrusion detection system",
@@ -49,7 +54,8 @@
             },
             {
                 "question": "@`wotf detection methods uses established baselines and behaviours for detecting intrusions?",
-                "answers": [
+                "type": 1,
+                "options": [
                     "Host-based Detection",
                     "Network-based Detection",
                     "Signature-based Detection",
@@ -63,7 +69,8 @@
         "questions": [
             {
                 "question": "@`wotf is the most suitable detection method for port scanning attack?",
-                "answers": [
+                "type": 1,
+                "options": [
                     "Host-based anomaly detection",
                     "Protocol anomaly detection",
                     "Signature-based detection",
@@ -72,7 +79,8 @@
             },
             {
                 "question": "@`wotf nmap timers will likely be detected quickly by the intrusion detection system?",
-                "answers": [
+                "type": 1,
+                "options": [
                     "-T0 Paranoid",
                     "-T1 Sneaky",
                     "[]-T5 Insane",
@@ -81,7 +89,8 @@
             },
             {
                 "question": "Statistical anomaly detection is also ___",
-                "answers": [
+                "type": 1,
+                "options": [
                     "[]used in detecting port scanning activities",
                     "used for detecting cross-site scripting attacks",
                     "used to flag out normal network traffic activity",
@@ -90,11 +99,24 @@
             },
             {
                 "question": "You were alerted to a large influx of network traffic to a particular server in your network. Upon investigating the network packets captured, you noticed that there were many SYN packets being sent to multiple ports. What kind of malicious activity did the attacker perform?",
-                "answers": [
+                "type": 1,
+                "options": [
                     "SYN Flood Attack",
                     "IP Fragmentation",
                     "[]Port Scanning",
                     "ARP Spoofing"
+                ]
+            },
+            {
+                "question": "Which of the following techniques can be used to defend against ARP Spoofing?",
+                "type": 2,
+                "options": [
+                    "[]Set static ARP entries",
+                    "Set dynamic ARP entries",
+                    "Install Host-Based Intrusion Detection Systems",
+                    "[]Install Network-Based Intrusion Detection Systems",
+                    "Disable the ARPspoof preprocessor in Snort",
+                    "Disable the Dynamic ARP Inspection (DAI) feature on network switches"
                 ]
             }
         ]
@@ -104,7 +126,8 @@
         "questions": [
             {
                 "question": "@`wotf activities is NOT useful in evading signature-based intrusion detection systems?",
-                "answers": [
+                "type": 1,
+                "options": [
                     "Create different variants of a malware",
                     "Payload encryption",
                     "[]SQL injection to bypass login",
@@ -113,7 +136,8 @@
             },
             {
                 "question": "@`wotf is used to perform session hijacking?",
-                "answers": [
+                "type": 1,
+                "options": [
                     "SQL injection",
                     "IP Fragmentation",
                     "[]Cross-site scripting",

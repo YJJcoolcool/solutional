@@ -30,7 +30,6 @@ $(document).ready(function()
 });
 
 function process(data){
-    console.log(data)
     // Distribute the number of questions for each section
     var numsec = (topics.match(/1/g) || []).length;
     var remainderqns = numqn%numsec;
@@ -193,8 +192,6 @@ function multiCheckAnswer(){
             correctanswers[1]++;
         }
     }
-    console.log(correctanswers)
-    console.log(correctanswers[0]===correctanswers[1])
     if (correctanswers[0]===correctanswers[1] && !correctanswers[2]){
         correctqns++;
     }

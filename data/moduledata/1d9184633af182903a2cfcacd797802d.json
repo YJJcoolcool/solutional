@@ -59,7 +59,18 @@
                     "Host-based Detection",
                     "Network-based Detection",
                     "Signature-based Detection",
-                    "Anomaly-based Detection"
+                    "[]Anomaly-based Detection"
+                ]
+            },
+            {
+                "question": "@`wotf is true about Host-Based Intrusion Prevention Systems?",
+                "type": 2,
+                "options": [
+                    "It can be deployed on a network",
+                    "It can be installed together with a firewall",
+                    "[]It can generate alerts based on behaviour at the desktop level",
+                    "It can detect malicious activities happening at the network layer",
+                    "[]It can monitor changes to files and directories on a computer"
                 ]
             }
         ]
@@ -108,7 +119,7 @@
                 ]
             },
             {
-                "question": "Which of the following techniques can be used to defend against ARP Spoofing?",
+                "question": "@wotf techniques can be used to defend against ARP Spoofing?",
                 "type": 2,
                 "options": [
                     "[]Set static ARP entries",
@@ -142,6 +153,16 @@
                     "IP Fragmentation",
                     "[]Cross-site scripting",
                     "Drive-by download"
+                ]
+            },
+            {
+                "question": "Which statement based describes 'content: '100 00 00 001';' used in a Snort rule?",
+                "type": 1,
+                "options": [
+                    "It is a unique content that should be used often in signature-based detection",
+                    "It is commonly used as a content for anomaly-based detection",
+                    "[]It is too common and should not be used in signature-based detection",
+                    "It is used to detect null scans"
                 ]
             }
         ]

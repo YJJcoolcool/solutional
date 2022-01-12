@@ -21,6 +21,13 @@ function displayModules(modules){
         var clone = cardtemplate.content.cloneNode(true);
         clone.querySelector(".card-title").innerText=element;
         (modules[element].description) ? clone.querySelector(".card-text").innerText=modules[element].description : null;
+        if (modules[element].imgsrc) {
+            if (modules[element].imgsrc.startsWith('http://') || modules[element].imgsrc.startsWith('https://')){
+                clone.querySelector("img").src=modules[element].imgsrc;
+            } else {
+                clone.querySelector("img").src="/solutional/assets/images/modules/"+modules[element].imgsrc;
+            }
+        }
         clone.querySelector("a").href="module?uid="+modules[element].uid;
         modulelist.appendChild(clone)
     })

@@ -9,11 +9,16 @@ $(document).ready(function()
         url: "/solutional/data/modules/"+uid+".json",
         //url: "https://yjjcoolcool.github.io/solutional/data/modules.json",
         success: function (response) {
-            document.querySelector(".container .row p").remove();
+            document.getElementById("loading").remove();
+            document.getElementById("submit").disabled=false;
             displayTopics(response);
         },
         error: function (obj, textStatus, errorThrown) {
             console.log("Error "+textStatus+": "+errorThrown);
+            setTimeout(()=>{
+                document.getElementById("loading").style.color="red";
+                document.getElementById("loading").innerHTML="Error "+textStatus+": "+errorThrown+"<br><br>(If this problem persists, please screenshot this page (including the URL) and create an issue <a href='https://github.com/YJJcoolcool/solutional/issues/new' target='_blank'>here</a>)";
+            },1000);
         }
     });
 });

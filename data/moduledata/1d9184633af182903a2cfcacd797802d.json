@@ -119,7 +119,7 @@
                 ]
             },
             {
-                "question": "@wotf techniques can be used to defend against ARP Spoofing?",
+                "question": "@`wotf techniques can be used to defend against ARP Spoofing?",
                 "type": 2,
                 "options": [
                     "[]Set static ARP entries",

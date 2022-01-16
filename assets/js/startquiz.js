@@ -13,6 +13,21 @@ var enteredanswer = []; // Only used for non-type 1 questions
 var shortforms = ["wotf","Which of the following"]
 //var audio = new Audio('/solutional/assets/danger.mp3');
 
+// Prompt user before exit/reload
+window.onbeforeunload = function (e) {
+    alert('E')
+    e = e || window.event;
+
+    // For IE and Firefox prior to version 4
+    if (e) {
+        e.returnValue = '1';
+    }
+
+    // For Safari
+    return '1';
+};
+
+// Fetch quiz data
 $(document).ready(function() 
 {
     document.getElementById('numqn').value=numqn;

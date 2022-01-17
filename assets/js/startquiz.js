@@ -11,20 +11,23 @@ var qnlist = [];
 var options;
 var enteredanswer = []; // Only used for non-type 1 questions
 var shortforms = ["wotf","Which of the following"]
+var safeexit = false;
 //var audio = new Audio('/solutional/assets/danger.mp3');
 
 // Prompt user before exit/reload
 window.onbeforeunload = function (e) {
-    alert('E')
-    e = e || window.event;
+    if (!safeexit) {
+        alert('E')
+        e = e || window.event;
 
-    // For IE and Firefox prior to version 4
-    if (e) {
-        e.returnValue = '1';
+        // For IE and Firefox prior to version 4
+        if (e) {
+            e.returnValue = '1';
+        }
+
+        // For Safari
+        return '1';
     }
-
-    // For Safari
-    return '1';
 };
 
 // Fetch quiz data
@@ -93,6 +96,22 @@ function nextQn(){
     }
     document.querySelector("#question").innerHTML = question;
     options = qnlist[currentqn]['options'];
+
+    // Image
+    var imagediv = document.getElementById('imagediv');
+    var imgsrc = qnlist[currentqn]['imgsrc'];
+    if (imgsrc) {
+        var imagetemplate = document.querySelector('#imagetemplate');
+        var clone = imagetemplate.content.cloneNode(true);
+        if (imgsrc.startsWith('http://') || imgsrc.startsWith('https://')){
+            clone.querySelector("img").src=imgsrc;
+        } else {
+            clone.querySelector("img").src="/solutional/assets/images/modules/"+uid+"/"+imgsrc;
+        }
+        imagediv.appendChild(clone)
+    }
+
+
     // Randomise options
     for (var i = options.length - 1; i > 0; i--) {
         var j = Math.floor(Math.random() * (i + 1));
@@ -215,3 +234,23 @@ function multiCheckAnswer(){
         document.getElementById('nextqn').innerHTML+=' ('+correctanswers[0]+'/'+correctanswers[1]+' answers correct)'; 
     }
 }
+
+
+
+// Time elapsed
+function msToHMS(duration) {
+    var seconds = parseInt((duration / 1000) % 60),
+    minutes = parseInt((duration / (1000 * 60)) % 60),
+    hours = parseInt((duration / (1000 * 60 * 60)) % 24);
+
+    hours = (hours < 10) ? "0" + hours : hours;
+    minutes = (minutes < 10) ? "0" + minutes : minutes;
+    seconds = (seconds < 10) ? "0" + seconds : seconds;
+    return hours+":"+minutes+":"+seconds;
+}
+var start = Date.now(), timeelapsed;
+setInterval(function() {
+    timeelapsed = msToHMS(Date.now() - start);
+    document.getElementById('timeelapsed').innerHTML = timeelapsed+" elapsed";
+    document.getElementById('timeelapsedval').value = timeelapsed;
+}, 1000)

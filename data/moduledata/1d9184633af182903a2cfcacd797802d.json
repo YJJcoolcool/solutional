@@ -166,5 +166,30 @@
                 ]
             }
         ]
+    }, 
+    {
+        "name": "LP4",
+        "questions": [
+            {
+                "question": "Refer to the Snort rule below. Which statement best describes this Snort rule?<br><i>alert tcp any any -> 192.168.1.0/24 111 (msg:\"snort rule\"; content:\"|00 01 86 a5|\"; sid:1234;)</i>",
+                "type": 1,
+                "options": [
+                    "An alert is generated when a TCP packet is generated from any IP on the 192.168.1.0 subnet and destined to any IP on port 111 with the content \"|00 01 86 a5|\"",
+                    "[]An alert is generated when a TCP packet from any IP address is destined for any IP address on the 192.168.1.0 subnet on port 111 with the content \"|00 01 86 a5|\"",
+                    "An alert is generated when any packet other than a TCP packet is destined for any IP address on the 192.168.1.0 subnet on port 111 with the content \"|00 01 86 a5|\"",
+                    "An alert is generated when a TCP packet from port 111 of any IP address is destined for any IP on the 192.168.1.0 subnet on port 111 with the content \"|00 01 86 a5|\""
+                ]
+            },
+            {
+                "question": "Event correlation...",
+                "type": 1,
+                "options": [
+                    "Identifies anomalies to check if a system is vulnerable to attack",
+                    "[]Identifies links between events and how they are related",
+                    "Is the process of investigating Windows Event Logs",
+                    "Is the process of investigating Snort alerts"
+                ]
+            }
+        ]
     }
 ]

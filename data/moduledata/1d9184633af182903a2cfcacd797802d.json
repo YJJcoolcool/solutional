@@ -119,6 +119,47 @@
                 ]
             },
             {
+                "question": "@`wotf is the TCP flag value for an RST/ACK packet?",
+                "type": 1,
+                "options": [
+                    "0x002",
+                    "0x004",
+                    "0x012",
+                    "[]0x014"
+                ]
+            },
+            {
+                "question": "@`wotf SNORT rules will accurately detect all replies from any FTP server?",
+                "type": 1,
+                "options": [
+                    "alert ip any any -> any 21 (msg:\"Reply Detected\"; classtype:misc-activity; sid:10000001; rev:1;)",
+                    "alert tcp any any -> any 21 (msg:\"Reply Detected\"; classtype:misc-activity; sid:10000001; rev:1;)",
+                    "alert tcp any 21 -> any any (msg:\"Reply Detected\"; classtype:misc-activity; sid:10000001; rev:1;)",
+                    "alert ip any 21 -> any any (msg:\"Reply Detected\"; classtype:misc-activity; sid:10000001; rev:1;)"
+                ]
+            },
+            {
+                "question": "Refer to the network traffic below. Which of the following commands was most likely used by the attacker in this attack?",
+                "type": 1,
+                "imgsrc":"lp2_e4d960b8.jpg",
+                "options": [
+                    "nmap -p 80 192.168.0.100",
+                    "nmap -sT 192.168.0.100",
+                    "[]hping3 -S -p 80 --flood --rand-source 192.168.0.100",
+                    "hping3 -S --flood 192.168.0.100"
+                ]
+            },
+            {
+                "question": "@`wotf is/are counteracting solutions to fragmentation attacks?",
+                "type": 2,
+                "options": [
+                    "[]Holding fragments for at least 60 seconds",
+                    "[]Sufficient logging of traffic",
+                    "Reassemble sessions",
+                    "Doing necessary protocol conversions"
+                ]
+            },
+            {
                 "question": "@`wotf techniques can be used to defend against ARP Spoofing?",
                 "type": 2,
                 "options": [

@@ -108,6 +108,7 @@ function nextQn(){
         } else {
             clone.querySelector("img").src="/solutional/assets/images/modules/"+uid+"/"+imgsrc;
         }
+        clone.getElementById("imgdiv").classList.add('clone');
         imagediv.appendChild(clone)
     }
 

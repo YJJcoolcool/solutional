@@ -63,13 +63,19 @@ function process(data){
     // Pick questions
     for (var i=0; i < topics.length; i++){
         if (topics[i]==="1"){
+            var currenttopicqns = [];
             for (var k=0; k < qndistribution[j]; k++){
-                var qn = data[i]['questions'][Math.floor(Math.random()*data[i]['questions'].length)]
-                while (qnlist.length>=1 && qnlist[qnlist.length-1]['question']===qn['question'] && data[i]['questions'].length>1){
-                    qn = data[i]['questions'][Math.floor(Math.random()*data[i]['questions'].length)]
+                var qn = data[i]['questions'][Math.floor(Math.random()*data[i]['questions'].length)];
+                // Prevent repeated questions
+                while (qnlist.length>=1 && (currenttopicqns.includes(qn['question']) && currenttopicqns.length<data[i]['questions'].length) && data[i]['questions'].length>1){
+                    qn = data[i]['questions'][Math.floor(Math.random()*data[i]['questions'].length)];
                 }
-                qnlist.push(qn)
+                console.log(currenttopicqns.length)
+                console.log(data[i]['questions'].length)
+                qnlist.push(qn);
+                currenttopicqns.push(qn['question']);
             }
+            console.log(currenttopicqns)
             j++;
         }
     }

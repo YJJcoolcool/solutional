@@ -177,6 +177,16 @@
         "name": "LP3",
         "questions": [
             {
+                "question": "What is the minimum number of Snort rules needed to detect for TCP traffic that goes through random ports from 6881 to 6999?",
+                "type": 1,
+                "options": [
+                    "[]1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            {
                 "question": "@`wotf activities is NOT useful in evading signature-based intrusion detection systems?",
                 "type": 1,
                 "options": [
@@ -205,6 +215,38 @@
                     "[]It is too common and should not be used in signature-based detection",
                     "It is used to detect null scans"
                 ]
+            },
+            {
+                "question": "Which technique is the best method for detecting known malware?",
+                "type": 1,
+                "options": [
+                    "Statistical Anomaly Detection",
+                    "Traffic Anomaly Based Detection",
+                    "Protocol Anomaly Based Detection",
+                    "[]Signature Based Detection"
+                ]
+            },
+            {
+                "question": "@`wotf are goals for an attack in the installation phase of the Cyber Kill Chain?",
+                "type": 2,
+                "options": [
+                    "Establish a Command and Control (C2) with the target system",
+                    "Use the information from the reconnaissance phase to develop a weapon against the target",
+                    "Break the vulnerability and gain control of the target",
+                    "[]Create a backdoor in the target system",
+                    "[]Create and maintain persistent access"
+                ]
+            },
+            {
+                "question": "Given the following HTTP GET request:<br>GET /demoactivebusinessdirectory/default.asp?update user set passwd='th0r\"%2 Owhere userid='thor\";-- ?<br>@`wotf statements best describes the HTTP GET request?",
+                "type": 2,
+                "options": [
+                    "Attacker is performing a drive-by download attack",
+                    "Attacker is performing a cross-site scripting attack",
+                    "[]Attacker is performing an SQL injection attack",
+                    "The HTTP request updates th0r's password to 'thor'",
+                    "[]The HTTP request updates thor's password to 'th0r'"
+                ]
             }
         ]
     }, 
@@ -229,6 +271,37 @@
                     "[]Identifies links between events and how they are related",
                     "Is the process of investigating Windows Event Logs",
                     "Is the process of investigating Snort alerts"
+                ]
+            },
+            {
+                "question": "Given an attacker's public IP address, how can you track the attacker down?",
+                "type": 1,
+                "options": [
+                    "[]Perform a whois to identify the ISP of the IP address",
+                    "Use the nbtstat command to get the computer name",
+                    "Find out the computer name assigned to the IP address from the local DHCP server"
+                ]
+            },
+            {
+                "question": "Given the network traffic below, which of the following Snort rules will trigger for packet 1?",
+                "type": 2,
+                "imgsrc":"lp4_5477bef5.jpg",
+                "options": [
+                    "alert tcp any any -> any 69 (msg:\"TFTP Request Detected!\"; classtype: misc-activity; sid: 10000001; rev: 1;)",
+                    "alert tcp 192.168.0.253 any -> any any (msg:\"TFTP Request Detected!\"; classtype: misc-activity; sid: 10000001; rev: 1;)",
+                    "alert tcp any any -> 192.168.0.10 tftp (msg:\"TFTP Request Detected!\"; classtype: misc-activity; sid: 10000001; rev: 1;)",
+                    "[]alert udp any any -> any 69 (msg:\"TFTP Request Detected!\"; classtype: misc-activity; sid: 10000001; rev: 1;)",
+                    "[]alert udp 192.168.0.253 any -> any any (msg:\"TFTP Request Detected!\"; classtype: misc-activity; sid: 10000001; rev: 1;)"
+                ]
+            },
+            {
+                "question": "Which two of the following are purposes of performing log correlation?",
+                "type": 2,
+                "options": [
+                    "Check if a system/network is vulnerable to attack",
+                    "[]Identify links and relationships between logs/network traffic",
+                    "[]Make sense of events and how they are related",
+                    "Identify anomalies in network traffic"
                 ]
             }
         ]

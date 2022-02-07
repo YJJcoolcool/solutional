@@ -79,6 +79,10 @@
         form input{
             width: 100%;
         }
+
+        .noscroll{
+            overflow: hidden;
+        }
     </style>
 </head>
 <body>
@@ -118,7 +122,7 @@
             <!-- Image Template -->
             <template id="imagetemplate">
                 <br>
-                <div id="imgdiv" class="d-flex justify-content-center" onclick="this.classList.toggle('imgzoom')">
+                <div id="imgdiv" class="d-flex justify-content-center" onclick="expandImage()">
                     <img src=''>
                 </div>
             </template>

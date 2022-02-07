@@ -261,3 +261,11 @@ setInterval(function() {
     document.getElementById('timeelapsed').innerHTML = timeelapsed+" elapsed";
     document.getElementById('timeelapsedval').value = timeelapsed;
 }, 1000)
+
+//Function for expanding image
+function expandImage(){
+    const element = document.getElementById("imgdiv");
+    element.classList.toggle('imgzoom');
+    document.getElementsByTagName('body')[0].classList.toggle('noscroll');
+    (element.classList.contains('imgzoom'))?element.setAttribute("style","top:"+window.scrollY+"px"):null;
+}

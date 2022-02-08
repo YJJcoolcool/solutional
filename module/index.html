@@ -24,6 +24,15 @@
         #loading {
             font-weight: bold;
         }
+        details{
+            margin-block-end: 1em;
+        }
+        details > p {
+            padding-left: 1em;
+        }
+        label > p {
+            padding-left: 1em;
+        }
     </style>
 </head>
 <body>
@@ -74,7 +83,7 @@
                     </template>
                 </table>
                 <hr>
-                <table>
+                <!--<table>
                     <tr>
                         <td>
                             <input type="checkbox" name="random" id="random" disabled>
@@ -88,7 +97,7 @@
                             </label>
                         </td>
                     </tr>
-                </table>
+                </table>-->
                 <br>
                 <label for="numqn" class="nodesc">Number of questions:</label>
                 <select id="numqn" name="numqn">
@@ -98,7 +107,7 @@
                     <option value="40">40</option>
                     <option value="60">60</option>
                 </select>
-                <p>(Note: Some questions may be repeated)</p>
+                <p>(Some questions may be repeated)</p>
                 <br>
                 <br>
                 <input id="submit" type="submit" value="Start!" class="btn btn-primary" onclick="return checkForm()" disabled>

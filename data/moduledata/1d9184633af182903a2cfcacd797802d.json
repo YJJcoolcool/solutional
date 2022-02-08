@@ -72,6 +72,18 @@
                     "It can detect malicious activities happening at the network layer",
                     "[]It can monitor changes to files and directories on a computer"
                 ]
+            },
+            {
+                "question": "An attacker in the 172.20.0.0/16 network running Windows 7 is trying to evade an IDS located at 203.117.164.161 using IP fragmentation by TTL technique. The trace route results are shown below. Which TTL values are suitable for falsified payloads and legitimate payloads respectively for a malware to successfully evade the IDS?",
+                "type": 2,
+                "imgsrc": "lp1_ed414945.png",
+                "options": [
+                    "3,9",
+                    "9,3",
+                    "[]6,8",
+                    "4,8",
+                    "[]6,9"
+                ]
             }
         ]
     },
@@ -115,6 +127,16 @@
                     "SYN Flood Attack",
                     "IP Fragmentation",
                     "[]Port Scanning",
+                    "ARP Spoofing"
+                ]
+            },
+            {
+                "question": "You were alerted to a large influx of network traffic to a particular server in your network. Upon investigating the network packets captured, you noticed that there were many SYN packets being sent to the same port. What kind of malicious activity did the attacker perform?",
+                "type": 1,
+                "options": [
+                    "[]SYN Flood Attack",
+                    "IP Fragmentation",
+                    "Port Scanning",
                     "ARP Spoofing"
                 ]
             },
@@ -224,6 +246,18 @@
                     "Traffic Anomaly Based Detection",
                     "Protocol Anomaly Based Detection",
                     "[]Signature Based Detection"
+                ]
+            },
+            {
+                "question": "Refer to the network traffic below. Which 2 of the following statements are true?",
+                "type": 2,
+                "imgsrc": "lp3_a8e98089.png",
+                "options": [
+                    "The attacker's IP address is 192.168.0.13",
+                    "[]The attacker's IP address is 192.168.0.15",
+                    "The attacker is performing session hijacking on the compromised website",
+                    "[]The attacker is injecting a stolen session on the compromised website",
+                    "The attacker is performing an SQL injection on the compromised website"
                 ]
             },
             {

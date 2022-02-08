@@ -26,18 +26,18 @@ $(document).ready(function()
 function displayTopics(topics){
     var checkboxtemplate = document.querySelector('#checkboxtemplate');
     var topiclist = document.querySelector('.container .row table');
-    Object.keys(topics).forEach((element)=>{
+    topics.forEach((element)=>{
         options+="0";
         var clone = checkboxtemplate.content.cloneNode(true);
         clone.querySelector("input").id = element;
         clone.querySelector("label").htmlFor = element;
-        if (topics[element].description) {
+        if (element.description) {
             clone.querySelector(".nodesc").remove();
-            clone.querySelector("summary").innerText=topics[element].name;
-            clone.querySelector("details p").innerText=topics[element].description;
+            clone.querySelector("summary").innerText=element.name;
+            clone.querySelector("details p").innerText=element.description;
         } else {
             clone.querySelector("details").remove();
-            clone.querySelector("p").innerText=topics[element].name;
+            clone.querySelector("p").innerText=element.name;
         }
         topiclist.appendChild(clone)
     })

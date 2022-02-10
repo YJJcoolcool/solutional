@@ -1,0 +1,109 @@
+[
+    {
+        "name": "LP3",
+        "questions": [
+            {
+                "question": "When creating an EBS volume for the instance, which of the following attribute of the volume must match that of the instance?",
+                "type": 1,
+                "options": [
+                    "IOPS",
+                    "Snapshot",
+                    "[]Availability Zone",
+                    "Regional Data Centre"
+                ]
+            },
+            {
+                "question": "Which AWS service provides central collection and auditing for event and log data from your AWS services?",
+                "type": 1,
+                "options": [
+                    "[]CloudTrail",
+                    "CloudWatch",
+                    "Lightsail",
+                    "CloudAlert"
+                ]
+            },
+            {
+                "question": "When versioning is enabled within the S3 service, at which level is it controlled?",
+                "type": 1,
+                "options": [
+                    "Region",
+                    "Object",
+                    "[]Bucket",
+                    "Availability Zone"
+                ]
+            },
+            {
+                "question": "How can AWS EC2 instance store volume be attached to another instance?",
+                "type": 1,
+                "options": [
+                    "Stop the instance, detach the volume and attach to other instance",
+                    "[]Unable to attach instance store volume to an instance after launching the instance",
+                    "Terminate the instance, detach the volume and attach to other instance",
+                    "Use \"detach volume\" and then attach to another instance"
+                ]
+            },
+            {
+                "question": "Which protocol is most commonly used for federated authentication systems?",
+                "type": 1,
+                "options": [
+                    "JSON",
+                    "[]SAML 2.0",
+                    "XML",
+                    "Node.js"
+                ]
+            },
+            {
+                "question": "Which of the following statement is true for an AWS IAM Group?",
+                "type": 1,
+                "options": [
+                    "A collection of AWS accounts",
+                    "It is the group of EC2 machines that gain the permissions specified in the Group",
+                    "There is no Group in IAM, but only Users and Roles",
+                    "A collection of users"
+                ]
+            },
+            {
+                "question": "@`wotf statements is TRUE regarding AWS EBS?",
+                "type": 1,
+                "options": [
+                    "[]EBS are available in SSD and magnetic options",
+                    "EBS volumes are available on magnetic disk by default",
+                    "EBS volumes are object-based storage",
+                    "EBS volumes cannot be encrypted"
+                ]
+            },
+            {
+                "question": "You created an S3 bucket named TestBucket1 in the Asia Pacific South East Region 1 and created a folder at the root level of the bucket called images/. What is the URI of the S3 bucket through a web browser?",
+                "type": 1,
+                "options": [
+                    "https://TestBucket1.s3-us-east1-amazonaws.com/images",
+                    "[]https://TestBucket1.s3-ap-southeast1-amazonaws.com/images",
+                    "https://TestBucket1/images.s3-ap-southeast1-amazonaws.com",
+                    "https://images/TestBucket1.s3-ap-southeast1-amazonaws.com"
+                ]
+            },
+            {
+                "question": "@`wotf statements correctly describes the IAM policy shown below?",
+                "type": 1,
+                "imgsrc": "lp4_724848ff.jpg",
+                "options": [
+                    "[]The policy grants full access to an AWS S3 bucket named \"examplebucket\"",
+                    "The policy denies any access to an AWS S3 bucket named \"examplebucket\"",
+                    "The policy grants full access to an AWS S3 bucket named \"arn\"",
+                    "The policy grants partial access to an AWS S3 bucket named \"examplebucket\""
+                ]
+            },
+            {
+                "question": "@`wotf technologies can be used to protect data in transit?",
+                "type": 2,
+                "options": [
+                    "VPC",
+                    "[]VPN",
+                    "ACLs",
+                    "Security Groups",
+                    "TLS"
+                ]
+            }
+        ]
+    }
+]

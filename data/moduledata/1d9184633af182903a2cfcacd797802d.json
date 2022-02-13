@@ -84,6 +84,15 @@
                     "4,8",
                     "[]6,9"
                 ]
+            },
+            {
+                "question": "Enter the wireshark filter to filter for traffic from source: 192.168.1.3",
+                "type": 3,
+                "strictcase": true,
+                "accepted": [
+                    "ip.src==192.168.1.3",
+                    "ip.src == 192.168.1.3"
+                ]
             }
         ]
     },

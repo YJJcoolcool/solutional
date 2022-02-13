@@ -336,5 +336,83 @@
                 ]
             }
         ]
+    },
+    {
+        "name": "LP4",
+        "questions": [
+            {
+                "question": "What attack is involved in the cracking of WPS?",
+                "type": 1,
+                "options": [
+                    "[]Brute force attack",
+                    "Dictionary attack",
+                    "Rainbow table attack",
+                    "Social engineering attack"
+                ]
+            },
+            {
+                "question": "What is the maximum number of combinations to crack the WPS PIN?",
+                "type": 1,
+                "options": [
+                    "[]11,000",
+                    "20,000",
+                    "100,000,000",
+                    "10,000,000"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "LP5",
+        "questions": [
+            {
+                "question": "In the x64 computing architecture, what is the size of a WORD?",
+                "type": 1,
+                "options": [
+                    "[]2x bigger than the size of a WORD in x86",
+                    "32 bytes",
+                    "64 bytes",
+                    "Same as a WORD size in x86"
+                ]
+            },
+            {
+                "question": "What is the correct memory representation in little endian format for the memory address 0xbffffcdb?",
+                "type": 1,
+                "options": [
+                    "\\xfc\\xdb\\xbf\\xff",
+                    "\\xbf\\xff\\xfc\\xdb",
+                    "[]\\xdb\\xfc\\xff\\xbf",
+                    "\\xbd\\xcf\\xff\\xfb"
+                ]
+            },
+            {
+                "question": "@`wotf two statements are true about memory processor registers?",
+                "type": 2,
+                "options": [
+                    "A register is able to hold data but not instructions.",
+                    "A register is able to hold instructions but not data.",
+                    "There are equal number of registers in both x86 and x64 architecture.",
+                    "[]An EIP register is able to hold the memory address of the next instruction to be executed.",
+                    "[]EBP register points to the bottom of the stack while ESP register points to the top of the stack."
+                ]
+            },
+            {
+                "question": "What is the memory address that points to 0x848cbfff, circled in red?",
+                "type": 3,
+                "strictcase": true,
+                "imgsrc": "lp4_0997126b.png",
+                "accepted": [
+                    "0xbffff0fa"
+                ]
+            },
+            {
+                "question": "Suppose the EBP is located at memory address 0xbffff126. What is the memory address of EBP + 12 bytes?",
+                "type": 3,
+                "strictcase": true,
+                "accepted": [
+                    "0xbffff132"
+                ]
+            }
+        ]
     }
 ]

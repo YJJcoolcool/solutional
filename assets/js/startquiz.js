@@ -118,26 +118,24 @@ function nextQn(){
         imagediv.appendChild(clone)
     }
 
-
-    // Randomise options
-    for (var i = options.length - 1; i > 0; i--) {
-        var j = Math.floor(Math.random() * (i + 1));
-        var temp = options[i];
-        options[i] = options[j];
-        options[j] = temp;
-    }
-
     // Different types of questions
     /*
     1 - Single Choice Question (MCQ)
     2 - Multiple Choice Question (MCQ)
     */
-    var type = qnlist[currentqn]['type']
+    const type = qnlist[currentqn]['type']
+    const answerlist = document.getElementById('buttonarea');
     if (type===1 || type===2) {
+        // Randomise options
+        for (var i = options.length - 1; i > 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1));
+            var temp = options[i];
+            options[i] = options[j];
+            options[j] = temp;
+        }
         // Single choice template
         var answerbuttontemplate
-        (type===1) ? answerbuttontemplate = document.querySelector('#answerbuttontemplate') : answerbuttontemplate = document.querySelector('#multianswerbuttontemplate');
-        var answerlist = document.getElementById('buttonarea');
+        (type===1) ? answerbuttontemplate = document.getElementById('answerbuttontemplate') : answerbuttontemplate = document.getElementById('multianswerbuttontemplate');
         var count = 0;
         // Create a button for each option, replace the correct ans brackets [] with empty string
         options.forEach((element)=>{
@@ -153,25 +151,16 @@ function nextQn(){
             document.getElementById('nextqn').onclick = function() {multiCheckAnswer()};
             document.getElementById('additionalnotes').innerHTML="You may select 1 or more answers.";
         }
-    }
-}
-
-// For single select
-function checkAnswer(id){
-    if (document.getElementById('nextqn').disabled) {
-        // Check if answer is correct
-        if (options[id].startsWith('[]')) {
-            document.getElementById(id).classList.remove('btn-dark');
-            document.getElementById(id).classList.add('btn-success');
-            correctqns++;
-        } else {
-            document.getElementById(id).classList.remove('btn-dark');
-            document.getElementById(id).classList.add('btn-danger');
-            /*document.getElementById('socialcredit').style.display = 'block';
-            setTimeout(()=>{document.getElementById('socialcredit').style.display = 'none';},5500)
-            audio.play();*/
+    } else if (type===3) {
+        var answerbuttontemplate = document.getElementById('shorttextanswertemplate');
+        var clone = answerbuttontemplate.content.cloneNode(true);
+        clone.querySelector("input").id=0;
+        clone.querySelector("div").classList.add('clone');
+        answerlist.appendChild(clone);
+        document.getElementById('nextqn').onclick = function() {textCheckAnswer()};
+        if (qnlist[currentqn]['strictcase']==true){
+            document.getElementById('additionalnotes').innerHTML="Case sensitive.";
         }
-        finishQn();
     }
 }
 
@@ -191,6 +180,25 @@ function finishQn(){
     }
     // Clear selected options
     enteredanswer = [];
+}
+
+// For single select
+function checkAnswer(id){
+    if (document.getElementById('nextqn').disabled) {
+        // Check if answer is correct
+        if (options[id].startsWith('[]')) {
+            document.getElementById(id).classList.remove('btn-dark');
+            document.getElementById(id).classList.add('btn-success');
+            correctqns++;
+        } else {
+            document.getElementById(id).classList.remove('btn-dark');
+            document.getElementById(id).classList.add('btn-danger');
+            /*document.getElementById('socialcredit').style.display = 'block';
+            setTimeout(()=>{document.getElementById('socialcredit').style.display = 'none';},5500)
+            audio.play();*/
+        }
+        finishQn();
+    }
 }
 
 // For multi select
@@ -242,6 +250,46 @@ function multiCheckAnswer(){
     }
 }
 
+// For Short Text Answer
+// Enable submit button if there is text entered
+function textToggleSubmit(value){
+    if (value.length>0) {
+        document.getElementById('nextqn').innerHTML="Submit";
+        document.getElementById('nextqn').disabled=false;
+    } else {
+        document.getElementById('nextqn').innerHTML="Waiting for answer...";
+        document.getElementById('nextqn').disabled=true;
+    }
+}
+
+// Check answer
+function textCheckAnswer(){
+    var userinput = document.getElementById("0").value;
+    var acceptedAnswers = qnlist[currentqn]['accepted'];
+    // Convert to UPPERCASE if case-insensitive
+    if (qnlist[currentqn]['strictcase']!==true){
+        userinput = userinput.toUpperCase();
+        acceptedAnswers = acceptedAnswers.map(function(x){ return x.toUpperCase(); })
+    }
+    var correct=false;
+    for (var i=0; i<acceptedAnswers.length; i++) {
+        if (userinput===acceptedAnswers[i]) {
+            correct = true;
+            break;
+        }
+    }
+    if (correct){
+        correctqns++;
+        document.getElementById('nextqn').classList.remove('btn-dark');
+        document.getElementById('nextqn').classList.add('btn-success');
+        correctqns++;
+    } else {
+        document.getElementById('nextqn').classList.remove('btn-dark');
+        document.getElementById('nextqn').classList.add('btn-danger');
+    }
+    finishQn();
+}
+
 
 
 // Time elapsed
@@ -262,10 +310,18 @@ setInterval(function() {
     document.getElementById('timeelapsedval').value = timeelapsed;
 }, 1000)
 
-//Function for expanding image
+// Function for expanding image
 function expandImage(){
     const element = document.getElementById("imgdiv");
     element.classList.toggle('imgzoom');
     document.getElementsByTagName('body')[0].classList.toggle('noscroll');
     (element.classList.contains('imgzoom'))?element.setAttribute("style","top:"+window.scrollY+"px"):null;
 }
+
+// Enter to submit
+document.addEventListener("keydown", function(event) {
+    if (event.code === "Enter") {
+        // Trigger the button element with a click
+        document.getElementById("nextqn").click();
+    }
+});

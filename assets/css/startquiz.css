@@ -1,0 +1,73 @@
+.container>.row>div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.container>.row p{
+    margin: 0;
+}
+
+.container>.row progress{
+    margin-left: 5%;
+}
+
+#imgdiv{
+    width: 100%;
+}
+
+img{
+    max-width: 500px;
+    max-height: 100vh;
+    object-fit: contain;
+}
+
+img:hover{
+    cursor: zoom-in;
+}
+
+.imgzoom{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.imgzoom>img{
+    max-width: 90%;
+}
+
+.imgzoom>img:hover{
+    cursor: zoom-out;
+}
+
+div>input[type=text]{
+    width: 100%;
+}
+
+button{
+    width: 100%;
+    height: 100%;
+}
+
+#socialcredit{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: none;
+}
+#socialcredit>*{
+    position: relative;
+    top: -50%;
+    left: -50%;
+}
+
+form input{
+    width: 100%;
+}
+
+.noscroll{
+    overflow: hidden;
+}

@@ -1,5 +1,135 @@
 [
     {
+        "name": "LP1",
+        "questions": [
+            {
+                "question": "When using Infrastructure as a Service (laaS), what is the key benefit provided to the Customer?",
+                "type": 1,
+                "options": [
+                    "The Cost of Ownership is transferred",
+                    "[]The ability to scale up infrastructure services based on projected usage",
+                    "Increased energy and cooling system efficiency",
+                    "Usage is metered and priced on the basis of units consumed"
+                ]
+            },
+            {
+                "question": "@`wotf hypervisor types runs on a host OS that provides virtualization services, including memory management and device support?",
+                "type": 1,
+                "options": [
+                    "Type 1 hypervisor",
+                    "[]Type 2 hypervisor",
+                    "Class A hypervisor",
+                    "Bare Metal hypervisor"
+                ]
+            },
+            {
+                "question": "@`wotf is NOT a factor an organization might use in the cost-benefit analysis when deciding whether to migrate to a cloud environment?",
+                "type": 1,
+                "options": [
+                    "Pooled resources in the cloud",
+                    "Shifting from IT investment as capital expenditures to operational expenditures",
+                    "The time savings and efficiencies offered by the cloud service",
+                    "[]Branding associated with the cloud provider that might be selected"
+                ]
+            },
+            {
+                "question": "When should cloud providers allow Platform as a Service (PaaS) customers shell access to the servers running their instances?",
+                "type": 1,
+                "options": [
+                    "[]Never",
+                    "Weekly",
+                    "Only when the contract stipulates that requirement",
+                    "Always"
+                ]
+            },
+            {
+                "question": "From a customer perspective, all of the following are benefits of Infrastructure as a Service (IaaS) cloud services except...",
+                "type": 1,
+                "options": [
+                    "Reduced cost of ownership",
+                    "Reduced energy costs",
+                    "Metered usage",
+                    "[]Reduced cost of administering the OS in the cloud environment"
+                ]
+            },
+            {
+                "question": "@`wotf is a unique benefit of a private cloud versus other deployment models?",
+                "type": 1,
+                "options": [
+                    "Scalability",
+                    "Right-sizing resources",
+                    "Disaster recovery",
+                    "[]Ownership retention"
+                ]
+            },
+            {
+                "question": "@`wotf characteristics of cloud computing would be most attractive to management when looking to save costs?",
+                "type": 1,
+                "options": [
+                    "On-demand self service",
+                    "[]Measured service",
+                    "Resource pooling",
+                    "Rapid elasticity"
+                ]
+            },
+            {
+                "question": "Which cloud hosting model would be the most appropriate for a company looking to leverage multiple cloud providers for disaster recovery or load bursts?",
+                "type": 1,
+                "options": [
+                    "Public Cloud",
+                    "Community Cloud",
+                    "Private Cloud",
+                    "[]Hybrid Cloud"
+                ]
+            },
+            {
+                "question": "How does Elasticity differ from Scalability?",
+                "type": 1,
+                "options": [
+                    "Scalability differs in its ability to not only scale-out but to shrink back down resources based on-demand as well.",
+                    "[]Elasticity differs in its ability to not only scale-out but to shrink back down resources based on-demand as well.",
+                    "Elasticity is the ability to be available from many locations.",
+                    "There is no difference."
+                ]
+            },
+            {
+                "question": "@`wotf best describes server virtualization?",
+                "type": 1,
+                "options": [
+                    "Consolidation of data from multiple sources into a single virtual data store",
+                    "[]Logically partitioning physical compute and storage devices into multiple smaller virtual devices",
+                    "Aggregating physical resources spread over multiple physical devices into a single virtual device",
+                    "Abstracting the complexity of physical infrastructure behind a simple web"
+                ]
+            },
+            {
+                "question": "@`wotf best describes server virtualization?",
+                "type": 1,
+                "options": [
+                    "Consolidation of data from multiple sources into a single virtual data store",
+                    "[]Logically partitioning physical compute and storage devices into multiple smaller virtual devices",
+                    "Aggregating physical resources spread over multiple physical devices into a single virtual device",
+                    "Abstracting the complexity of physical infrastructure behind a simple web"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "LP2",
+        "questions": [
+            {
+                "question": "EMPTY?",
+                "type": 1,
+                "options": [
+                    "SAMPLE",
+                    "SAMPLE",
+                    "SAMPLE",
+                    "SAMPLE"
+                ]
+            }
+        ]
+    },
+    {
         "name": "LP3",
         "questions": [
             {

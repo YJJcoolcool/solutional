@@ -189,7 +189,7 @@
                     "A collection of AWS accounts",
                     "It is the group of EC2 machines that gain the permissions specified in the Group",
                     "There is no Group in IAM, but only Users and Roles",
-                    "A collection of users"
+                    "[]A collection of users"
                 ]
             },
             {
@@ -231,7 +231,7 @@
                     "[]VPN",
                     "ACLs",
                     "Security Groups",
-                    "TLS"
+                    "[]TLS"
                 ]
             }
         ]

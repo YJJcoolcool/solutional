@@ -83,13 +83,23 @@
                 ]
             },
             {
-                "question": "Which of the following software/tool is not found in Kali Linux?",
+                "question": "@`wotf software/tool is not found in Kali Linux?",
                 "type": 1,
                 "options": [
                     "John the Ripper",
                     "Metasploit",
                     "[]ipconfig",
                     "whois"
+                ]
+            },
+            {
+                "question": "@`wotf actions describe hacking for a cause?",
+                "type": 1,
+                "options": [
+                    "Active Hacking",
+                    "[]Hacktivism",
+                    "Activism",
+                    "Black-hat hacking"
                 ]
             },
             {
@@ -358,6 +368,32 @@
                     "20,000",
                     "100,000,000",
                     "10,000,000"
+                ]
+            },
+            {
+                "question": "What are the 3 port security violaton modes on Cisco switches?",
+                "type": 1,
+                "options": [
+                    "[]protect",
+                    "[]restrict",
+                    "[]shutdown",
+                    "drop",
+                    "ignore"
+                ]
+            },
+            {
+                "question": "Provide the command used to set a static ARP entry for the MAC Address D3:CB:A1:07:A3:54 tied to the IP address 192.168.2.55?",
+                "type": 3,
+                "accepted": [
+                    "arp -s 192.168.69.69 D3-CB-A1-07-A3-54",
+                    "arp /s 192.168.69.69 D3-CB-A1-07-A3-54"
+                ]
+            },
+            {
+                "question": "What is the Cisco switchport command used to set a static MAC Address for the MAC Address: B3:A4:56:73:42:73?",
+                "type": 3,
+                "accepted": [
+                    "switchport port-security mac-address b3a4.5673.4273"
                 ]
             }
         ]

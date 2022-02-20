@@ -384,7 +384,7 @@
             {
                 "question": "Provide the command used to set a static ARP entry for the MAC Address D3:CB:A1:07:A3:54 tied to the IP address 192.168.2.55?",
                 "type": 3,
-                "accepted": [
+                "options": [
                     "arp -s 192.168.69.69 D3-CB-A1-07-A3-54",
                     "arp /s 192.168.69.69 D3-CB-A1-07-A3-54"
                 ]
@@ -392,7 +392,7 @@
             {
                 "question": "What is the Cisco switchport command used to set a static MAC Address for the MAC Address: B3:A4:56:73:42:73?",
                 "type": 3,
-                "accepted": [
+                "options": [
                     "switchport port-security mac-address b3a4.5673.4273"
                 ]
             }
@@ -437,7 +437,7 @@
                 "type": 3,
                 "strictcase": true,
                 "imgsrc": "lp4_0997126b.png",
-                "accepted": [
+                "options": [
                     "0xbffff0fa"
                 ]
             },
@@ -445,7 +445,7 @@
                 "question": "Suppose the EBP is located at memory address 0xbffff126. What is the memory address of EBP + 12 bytes?",
                 "type": 3,
                 "strictcase": true,
-                "accepted": [
+                "options": [
                     "0xbffff132"
                 ]
             }

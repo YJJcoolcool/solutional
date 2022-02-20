@@ -265,7 +265,7 @@ function textToggleSubmit(value){
 // Check answer
 function textCheckAnswer(){
     var userinput = document.getElementById("0").value;
-    var acceptedAnswers = qnlist[currentqn]['accepted'];
+    var acceptedAnswers = qnlist[currentqn]['options'];
     // Convert to UPPERCASE if case-insensitive
     if (qnlist[currentqn]['strictcase']!==true){
         userinput = userinput.toUpperCase();

@@ -28,7 +28,8 @@ function displayModules(modules){
                 clone.querySelector("img").src="/solutional/assets/images/modules/"+modules[element].uid+"/"+modules[element].imgsrc;
             }
         }
-        clone.querySelector("a").href="module?uid="+modules[element].uid;
+        clone.getElementById("module").href="module?uid="+modules[element].uid;
+        clone.getElementById("viewmodule").href="viewmodule?uid="+modules[element].uid;
         modulelist.appendChild(clone)
     })
 }

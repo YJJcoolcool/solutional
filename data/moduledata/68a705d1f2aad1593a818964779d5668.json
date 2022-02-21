@@ -118,19 +118,151 @@
         "name": "LP2",
         "questions": [
             {
-                "question": "EMPTY?",
+                "question": "An administrator has configured an alarm to be notified when a virtual machine meets either of these conditions:<br><ul><li>High virtual CPU</li><li>High active memory consumption</li></ul><br>The alarm is only triggering when both of the conditions are met. What can be done to correct the alarm behavior?",
                 "type": 1,
                 "options": [
-                    "SAMPLE",
-                    "SAMPLE",
-                    "SAMPLE",
-                    "SAMPLE"
+                    "[]Edit the alarm and select Trigger if ANY of the following conditions are met",
+                    "Edit the alarm and select Trigger if ALL of the following conditions are met",
+                    "Create two separate alarms, one for CPU and one for memory and link them together with ESXCLI",
+                    "Delete the existing alarm and create a new event-based alarm"
+                ]
+            },
+            {
+                "question": "@`wotf is not a cloud security issue?",
+                "type": 1,
+                "options": [
+                    "Unpatched Operating System",
+                    "[]Cloud Service Level Agreement",
+                    "Social Engineering",
+                    "Natural Disasters"
+                ]
+            },
+            {
+                "question": "@`wotf is not a best practice in securing aa VMware vSphere infrastructure?",
+                "type": 1,
+                "options": [
+                    "Implement lockdown mode for the ESXi hosts",
+                    "Isolate network traffic",
+                    "Set up Network Time Protocol (NTP) servers",
+                    "[]Close all ESXi ports"
+                ]
+            },
+            {
+                "question": "@`wotf is not a component of the cloud stack?",
+                "type": 1,
+                "options": [
+                    "Data Centre",
+                    "User Interface",
+                    "Operating System (OS)",
+                    "Database",
+                    "[]Vendor"
+                ]
+            },
+            {
+                "question": "@`wotf is NOT an example of computer security logs?",
+                "type": 1,
+                "options": [
+                    "Application Logs",
+                    "Firewall Logs",
+                    "Operating System Logs",
+                    "[]Physical Acess Logs"
+                ]
+            },
+            {
+                "question": "Which log file should you check in order to find the root cause of a VM experiencing performance issues and unresponsiveness?",
+                "type": 1,
+                "options": [
+                    "vpxd.log",
+                    "ds.log",
+                    "vminst.log",
+                    "[]vmware.log"
+                ]
+            },
+            {
+                "question": "@`wotf are valid switch type(s) on a vSphere vSwitch?",
+                "type": 2,
+                "options": [
+                    "Extended Switch",
+                    "[]Standard Switch",
+                    "Series Switch",
+                    "[]Distributed Switch",
+                    "vSphere Stack Switch",
+                    "Parallel Switch"
+                ]
+            },
+            {
+                "question": "@`wotf are not typical port groups on a vSphere standard switch for virtual machines?",
+                "type": 2,
+                "options": [
+                    "Test/Development",
+                    "DMZ",
+                    "[]Management",
+                    "Production",
+                    "vMotion"
+                ]
+            },
+            {
+                "question": "@`wotf is considered a log collection strategy?",
+                "type": 2,
+                "options": [
+                    "Tiered Log Collection",
+                    "[]Distributed Log Collection",
+                    "[]Cloud Log Collection",
+                    "Parallel Log Collection",
+                    "Multi-tier Log Distribution"
                 ]
             }
         ]
     },
     {
         "name": "LP3",
+        "questions": [
+            {
+                "question": "Which option does VM Monitoring use to determine if a virtual machine should be reset?",
+                "type": 1,
+                "options": [
+                    "Network activity from the virtual machine",
+                    "Disk activity from the virtual machine",
+                    "CPU activity from the virtual machine",
+                    "[]Heartbeats from VMware Tools"
+                ]
+            },
+            {
+                "question": "An administrator is monitoring a High Availability (HA) and Distributed Resource Scheduler (DRS) enabled cluster and has noticed that virtual machines in the cluster are being migrated without user intervention. Why is this happening?",
+                "type": 1,
+                "options": [
+                    "[]The DRS Automation level is set to Fully Automated",
+                    "The Automation level is set to Automatic",
+                    "The DPM Threshold is set to Aggressive",
+                    "The Power Management feature is configured"
+                ]
+            },
+            {
+                "question": "Some of the VMs in a vSphere DRS cluster are not being migrated as expected. Which two factors can affect DRS behavior?",
+                "type": 2,
+                "options": [
+                    "The currently configured TPS settings for the VMs",
+                    "vSwitch Overrides",
+                    "[]DRS Aggression Levels (Migration Threshold)",
+                    "[]CPU, Memory, and Network Utilisation",
+                    "The currently configured Enhanced vMotion Compatibility level for the cluster"
+                ]
+            },
+            {
+                "question": "@`wotf are Admission Control settings of a VMware vSphere HA cluster?",
+                "type": 1,
+                "options": [
+                    "Define failover virtual networking",
+                    "[]Use dedicated failover hosts",
+                    "Define failover virtual datacenter",
+                    "Use dedicated failover datastores",
+                    "[]Define failover capacity by static number of hosts"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "LP4",
         "questions": [
             {
                 "question": "When creating an EBS volume for the instance, which of the following attribute of the volume must match that of the instance?",

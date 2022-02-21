@@ -90,6 +90,8 @@ function nextQn(){
     currentqn++
     document.querySelectorAll('.clone').forEach(e => e.remove());
     document.getElementById('additionalnotes').innerHTML="";
+    document.getElementById('nextqn').classList.remove('btn-success');
+    document.getElementById('nextqn').classList.remove('btn-danger');
     //document.getElementById('socialcredit').style.display = 'none';
 
     // Disable next question button
@@ -264,6 +266,7 @@ function textToggleSubmit(value){
 
 // Check answer
 function textCheckAnswer(){
+    document.getElementById('0').disabled=true;
     var userinput = document.getElementById("0").value;
     var acceptedAnswers = qnlist[currentqn]['options'];
     // Convert to UPPERCASE if case-insensitive
@@ -280,12 +283,11 @@ function textCheckAnswer(){
     }
     if (correct){
         correctqns++;
-        document.getElementById('nextqn').classList.remove('btn-dark');
-        document.getElementById('nextqn').classList.add('btn-success');
-        correctqns++;
+        document.getElementById('0').classList.add('bg-success');
+        document.getElementById('0').classList.add('text-light');
     } else {
-        document.getElementById('nextqn').classList.remove('btn-dark');
-        document.getElementById('nextqn').classList.add('btn-danger');
+        document.getElementById('0').classList.add('bg-danger');
+        document.getElementById('0').classList.add('text-light');
     }
     finishQn();
 }

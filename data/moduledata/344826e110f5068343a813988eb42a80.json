@@ -53,16 +53,6 @@
                 ]
             },
             {
-                "question": "@`wotf detection methods uses established baselines and behaviours for detecting intrusions?",
-                "type": 1,
-                "options": [
-                    "Host-based Detection",
-                    "Network-based Detection",
-                    "Signature-based Detection",
-                    "[]Anomaly-based Detection"
-                ]
-            },
-            {
                 "question": "Malcom is on a system internal to the network and has no knowledge of the target's network. Therefore, he is performing an internal, black-box test. What is the main difference between a traditional hacker and ethical hacker?",
                 "type": 1,
                 "options": [
@@ -100,6 +90,16 @@
                     "[]Hacktivism",
                     "Activism",
                     "Black-hat hacking"
+                ]
+            },
+            {
+                "question": "@`wotf is not a type of social engineering?",
+                "type": 1,
+                "options": [
+                    "Dumpster diving",
+                    "Shoulder surfing",
+                    "Tailgating",
+                    "[]Man-in-the-Middle attack"
                 ]
             },
             {
@@ -238,6 +238,46 @@
                 ]
             },
             {
+                "question": "What information-gathering tool gives information about a web server?",
+                "type": 1,
+                "options": [
+                    "NSlookup",
+                    "DNSlookup",
+                    "tracert",
+                    "[]Netcraft"
+                ]
+            },
+            {
+                "question": "@`wotf nmap SYN scans below will take the longest?",
+                "type": 1,
+                "options": [
+                    "[]nmap -sS -T paranoid",
+                    "nmap -sS -T 5",
+                    "nmap -sS aggressive",
+                    "nmap -sS -T slow"
+                ]
+            },
+            {
+                "question": "What is the purpose of an attacker performing a scan on port 139?",
+                "type": 1,
+                "options": [
+                    "[]To discover target systems running NetBIOS",
+                    "To check for file and print sharing on Windows systems",
+                    "To locate the FTP service on the targest host",
+                    "To discover proxy servers on a network"
+                ]
+            },
+            {
+                "question": "Which nmap option is used to probe open ports to determine sercice/version info?",
+                "type": 1,
+                "options": [
+                    "[]-sV",
+                    "-sS",
+                    "-V",
+                    "-version"
+                ]
+            },
+            {
                 "question": "@`wotf correctly describes what happens when you run nmap 192.168.1.0/24?",
                 "type": 2,
                 "options": [
@@ -257,6 +297,15 @@
                     "[]-p-",
                     "[]-p *"
                 ]
+            },
+            {
+                "question": "What is the name of the password attack that would be most successful against the password 'bananaking'?",
+                "type": 3,
+                "options": [
+                    "dictionary",
+                    "dictionary attack",
+                    "dictionaryattack"
+                ]
             }
         ]
     },
@@ -268,9 +317,9 @@
                 "type": 1,
                 "options": [
                     "set payload windows/meterpreter/reverse_tcp",
-                    "LHOST= 192.168.0.1 LPORT-4444 msfvenom-p windows/meterpreter/reverse_tcp",
-                    "[]msfvenom-p windows/meterpreter/reverse_tcp",
-                    "msfvenom-p windows/x64/meterpreter/reverse_tcp"
+                    "LHOST= 192.168.0.1 LPORT-4444 msfvenom -p windows/meterpreter/reverse_tcp",
+                    "[]msfvenom -p windows/meterpreter/reverse_tcp",
+                    "msfvenom -p windows/x64/meterpreter/reverse_tcp"
                 ]
             },
             {
@@ -372,7 +421,7 @@
             },
             {
                 "question": "What are the 3 port security violaton modes on Cisco switches?",
-                "type": 1,
+                "type": 2,
                 "options": [
                     "[]protect",
                     "[]restrict",
@@ -382,11 +431,11 @@
                 ]
             },
             {
-                "question": "Provide the command used to set a static ARP entry for the MAC Address D3:CB:A1:07:A3:54 tied to the IP address 192.168.2.55?",
+                "question": "Provide the command used to set a static ARP entry for the MAC Address D3:CB:A1:07:A3:54 tied to the IP address 192.168.2.55 on Windows",
                 "type": 3,
                 "options": [
-                    "arp -s 192.168.69.69 D3-CB-A1-07-A3-54",
-                    "arp /s 192.168.69.69 D3-CB-A1-07-A3-54"
+                    "arp -s 192.168.2.55 D3-CB-A1-07-A3-54",
+                    "arp /s 192.168.2.55 D3-CB-A1-07-A3-54"
                 ]
             },
             {
@@ -419,6 +468,16 @@
                     "\\xbf\\xff\\xfc\\xdb",
                     "[]\\xdb\\xfc\\xff\\xbf",
                     "\\xbd\\xcf\\xff\\xfb"
+                ]
+            },
+            {
+                "question": "What are some ways you can prevent a buffer overflow attack?",
+                "type": 2,
+                "options": [
+                    "[]Use a 'safer' function that has a boundary limit (e.g., strlcpy)",
+                    "[]Use a programming language (e.g., Python, Java) that checks for array boundaries",
+                    "Disable address space randomization",
+                    "There is no way to prevent a buffer overflow attack"
                 ]
             },
             {

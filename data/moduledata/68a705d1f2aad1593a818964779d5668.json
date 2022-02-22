@@ -138,7 +138,7 @@
                 ]
             },
             {
-                "question": "@`wotf is not a best practice in securing aa VMware vSphere infrastructure?",
+                "question": "@`wotf is not a best practice in securing a VMware vSphere infrastructure?",
                 "type": 1,
                 "options": [
                     "Implement lockdown mode for the ESXi hosts",
@@ -364,6 +364,61 @@
                     "ACLs",
                     "Security Groups",
                     "[]TLS"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "LP5",
+        "questions": [
+            {
+                "question": "The data in your application hosts have strict regulatory requirements regarding where data is stored. Which component of the AWS infrastructure would you be most focused on when deploying resources?",
+                "type": 1,
+                "options": [
+                    "Edge Services",
+                    "VPC",
+                    "Availability Zone",
+                    "[]Region"
+                ]
+            },
+            {
+                "question": "The developer team has requested for an Elastic Load Balancer that will load balance incoming traffic across multiple EC2 instances based on HTTP headers and query string. Which Elastic Load Balancer should be used?",
+                "type": 1,
+                "options": [
+                    "Classic Load Balancer",
+                    "Gateway Load Balancer",
+                    "[]Application Load Balancer",
+                    "Network Load Balancer"
+                ]
+            },
+            {
+                "question": "@`wotf is true about AWS Elastic Load Balancing (ELB)?",
+                "type": 1,
+                "options": [
+                    "ELBs act as firewalls to protect the application running on your EC2 instances",
+                    "ELBs enable you to scale horizontally by provisioning or terminating EC2 instances based on the demand of your resources",
+                    "[]ELBs enable you to achieve high availability within a single Region by distributing incoming web traffic to targets located in multiple Availability Zones",
+                    "ELBs enable you to achieve high availability across multiple Regions by distributing incoming web traffic to targets located in different Regions"
+                ]
+            },
+            {
+                "question": "You have a rule in a security group that allows HTTPS requests into an EC2 instance. Which statement is true about how the security group applies to responses to the request?",
+                "type": 1,
+                "options": [
+                    "The response will be blocked without a corresponding rule allowing it",
+                    "[]Security groups will automatically allow traffic that is a response to an allowed request",
+                    "Security groups automatically have the same rules for inbound and outbound requests",
+                    "A corresponding ACL must be present to allow the response"
+                ]
+            },
+            {
+                "question": "Which component of an Elastic Load Balancer do you configure to check incoming traffic based on a designated port/rules and forward that traffic to your EC2 instances behind the load balancer?",
+                "type": 1,
+                "options": [
+                    "EC2 Instances",
+                    "Target Groups",
+                    "Port Forwarder",
+                    "[]Listener"
                 ]
             }
         ]

@@ -165,7 +165,7 @@
                 "options": [
                     "alert ip any any -> any 21 (msg:\"Reply Detected\"; classtype:misc-activity; sid:10000001; rev:1;)",
                     "alert tcp any any -> any 21 (msg:\"Reply Detected\"; classtype:misc-activity; sid:10000001; rev:1;)",
-                    "alert tcp any 21 -> any any (msg:\"Reply Detected\"; classtype:misc-activity; sid:10000001; rev:1;)",
+                    "[]alert tcp any 21 -> any any (msg:\"Reply Detected\"; classtype:misc-activity; sid:10000001; rev:1;)",
                     "alert ip any 21 -> any any (msg:\"Reply Detected\"; classtype:misc-activity; sid:10000001; rev:1;)"
                 ]
             },
@@ -267,17 +267,6 @@
                     "The attacker is performing session hijacking on the compromised website",
                     "[]The attacker is injecting a stolen session on the compromised website",
                     "The attacker is performing an SQL injection on the compromised website"
-                ]
-            },
-            {
-                "question": "@`wotf are goals for an attack in the installation phase of the Cyber Kill Chain?",
-                "type": 2,
-                "options": [
-                    "Establish a Command and Control (C2) with the target system",
-                    "Use the information from the reconnaissance phase to develop a weapon against the target",
-                    "Break the vulnerability and gain control of the target",
-                    "[]Create a backdoor in the target system",
-                    "[]Create and maintain persistent access"
                 ]
             },
             {

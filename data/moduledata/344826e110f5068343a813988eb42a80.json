@@ -172,7 +172,7 @@
                 "type": 1,
                 "options": [
                     "Starts a TCP connection",
-                    "Resets the TCP connection",
+                    "[]Resets the TCP connection",
                     "Restores the connection to a previous state",
                     "Finishes a TCP connection"
                 ]
@@ -194,7 +194,7 @@
                     "DNS lookup",
                     "whois",
                     "ipconfig",
-                    "nslookup"
+                    "[]nslookup"
                 ]
             },
             {
@@ -339,7 +339,7 @@
                     "It helps defend against the Rainbow table attack",
                     "It is not used in Windows systems",
                     "Hash for two users with the same passwords will be different",
-                    "Lengthens the password since salt is prepended or appended"
+                    "[]Lengthens the password since salt is prepended or appended"
                 ]
             },
             {
@@ -431,18 +431,19 @@
                 ]
             },
             {
-                "question": "Provide the command used to set a static ARP entry for the MAC Address D3:CB:A1:07:A3:54 tied to the IP address 192.168.2.55 on Windows",
+                "question": "Provide the command used to set a static ARP entry for the MAC Address D3:CB:A1:07:A3:54 tied to the IP address 192.168.2.55 on Windows (Case Sensitive)",
                 "type": 3,
                 "options": [
                     "arp -s 192.168.2.55 D3-CB-A1-07-A3-54",
-                    "arp /s 192.168.2.55 D3-CB-A1-07-A3-54"
+                    "arp /s 192.168.2.55 D3-CB-A1-07-A3-54",
                 ]
             },
             {
                 "question": "What is the Cisco switchport command used to set a static MAC Address for the MAC Address: B3:A4:56:73:42:73?",
                 "type": 3,
                 "options": [
-                    "switchport port-security mac-address b3a4.5673.4273"
+                    "switchport port-security mac-address b3a4.5673.4273",
+                    "switchport port-security mac-address B3A4.5673.4273"
                 ]
             }
         ]

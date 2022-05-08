@@ -12,5 +12,9 @@
     "C375 - Cloud Infrastructure Security":{
         "tags":["RP","SOI"],
         "uid":"68a705d1f2aad1593a818964779d5668"
+    },
+    "C335 - Internetworking Security":{
+        "tags":["RP","SOI"],
+        "uid":"d5199733bbe364d51a521e46e03c8366"
     }
 }

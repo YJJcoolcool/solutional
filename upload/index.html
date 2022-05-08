@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View Questions & Answers | Solutional</title>
+    <title>Load Locally Stored Quiz File</title>
     <base href="..">
     <!-- Latest compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -13,28 +13,9 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!-- Script to list and display all topics -->
-    <script src="/assets/js/viewmodule.js"></script>
-    <style>
-        table tr td {
-            vertical-align: top;
-            padding-right: 1em;
-        }
-        summary,.nodesc {
-            font-weight: bold;
-        }
-        #loading {
-            font-weight: bold;
-        }
-        details{
-            margin-block-end: 1em;
-        }
-        details > p {
-            padding-left: 1em;
-        }
-        label > p {
-            padding-left: 1em;
-        }
-    </style>
+    <script src="/assets/js/upload.js"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="/assets/css/upload.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -46,37 +27,28 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
+                        <a class="nav-link" href="..">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/about">About</a>
+                        <a class="nav-link" href="about">About</a>
                     </li>
                 </ul>
             </div>
+            <a href="upload" class="btn btn-primary" id="module">Load a Quiz On Your Computer</a>
         </div>
     </nav>
     <br>
     <div class="container">
-        <h1>View Questions & Answers</h1>
+        <h1>Load Locally Stored Quiz File</h1>
         <hr>
-        <div class="row">
-            <p id="loading">Loading module data...</p>
-            <template id="topictemplate">
-                <h2></h2>
-                <hr>
-                <div></div>
-                <hr>
-                <br>
-            </template>
-            <template id="questiontemplate">
-                <h4></h4>
-                <div></div>
-                <br>
-                <hr>
-            </template>
-            <template id="optiontemplate">
-                <p></p>
-            </template>
+        <div class="alert alert-warning" role="alert">
+            Warning: Questions that use images will not load their images!
+        </div>
+        <div id="upload">
+            <label for="file" id="fileuploadlabel">Drag & drop a file from your computer, or upload manually:</label>
+            <br>
+            <br>
+            <input type="file" id="file" accept=".json">
         </div>
     </div>
 </body>

@@ -6,7 +6,7 @@ $(document).ready(function()
     document.querySelector("#uid").value=uid;
     $.ajax({
         type: "GET",
-        url: "/solutional/data/modules/"+uid+".json",
+        url: "/data/modules/"+uid+".json",
         //url: "https://yjjcoolcool.github.io/solutional/data/modules.json",
         success: function (response) {
             document.getElementById("loading").remove();

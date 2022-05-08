@@ -1,5 +1,6 @@
 var quizdata={};
 var getparams = new URLSearchParams(location.search.substring(1));
+const usingLocalFile = getparams.get("localfile")!=null;
 var uid = getparams.get("uid");
 var topics = getparams.get("topics");
 var random = getparams.get("random");
@@ -35,21 +36,47 @@ $(document).ready(function()
 {
     document.getElementById('numqn').value=numqn;
     document.getElementById('uid').value=uid;
-    $.ajax({
-        type: "GET",
-        url: "/solutional/data/moduledata/"+uid+".json",
-        success: function (response) {
-            process(response);
-        },
-        error: function (obj, textStatus, errorThrown) {
-            console.log("Error "+textStatus+": "+errorThrown);
+    if (!usingLocalFile) {
+        $.ajax({
+            type: "GET",
+            url: "/data/moduledata/"+uid+".json",
+            success: function (response) {
+                console.log(response)
+                process(response);
+            },
+            error: function (obj, textStatus, errorThrown) {
+                console.log("Error "+textStatus+": "+errorThrown);
+            }
+        });
+    } else {
+        var retrievedObject = sessionStorage.getItem('loadedQuizData');
+        var parsedObject = JSON.parse(retrievedObject);
+        console.log(parsedObject)
+        // Temporary - for drag and drop files, set all topics
+        var topics1 = [];
+        for (var i=0; i<parsedObject.length; i++){
+            topics1.push("1");
         }
-    });
+        topics = topics1;
+        // Temporary - set 10 qns
+        numqn = 10;
+
+        document.getElementById('numqn').value=numqn;
+        document.getElementById('uid').value=getparams.get("filename");
+
+        process(parsedObject);
+    }
 });
 
 function process(data){
     // Distribute the number of questions for each section
-    var numsec = (topics.match(/1/g) || []).length;
+    var numsec;
+    if (!usingLocalFile) {
+        numsec = (topics.match(/1/g) || []).length
+    } else {
+        numsec=data.length;
+    };
+    console.log(numsec)
     var remainderqns = numqn%numsec;
     for (var i=0; i < numsec; i++){
         qndistribution.push(Math.floor(numqn/numsec))
@@ -114,7 +141,7 @@ function nextQn(){
         if (imgsrc.startsWith('http://') || imgsrc.startsWith('https://')){
             clone.querySelector("img").src=imgsrc;
         } else {
-            clone.querySelector("img").src="/solutional/assets/images/modules/"+uid+"/"+imgsrc;
+            clone.querySelector("img").src="/assets/images/modules/"+uid+"/"+imgsrc;
         }
         clone.getElementById("imgdiv").classList.add('clone');
         imagediv.appendChild(clone)

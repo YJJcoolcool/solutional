@@ -36,6 +36,6 @@ function storeFileAndRedirect(file) {
         parsedData = JSON.parse(data);
         console.log(parsedData)
         sessionStorage.setItem('loadedQuizData', JSON.stringify(parsedData));
-        window.location = "../startquiz?localfile";
+        window.location = "startquiz?localfile";
     }
 }

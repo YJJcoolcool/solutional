@@ -39,7 +39,7 @@ $(document).ready(function()
     if (!usingLocalFile) {
         $.ajax({
             type: "GET",
-            url: "/data/moduledata/"+uid+".json",
+            url: "data/moduledata/"+uid+".json",
             success: function (response) {
                 console.log(response)
                 process(response);
@@ -141,7 +141,7 @@ function nextQn(){
         if (imgsrc.startsWith('http://') || imgsrc.startsWith('https://')){
             clone.querySelector("img").src=imgsrc;
         } else {
-            clone.querySelector("img").src="/assets/images/modules/"+uid+"/"+imgsrc;
+            clone.querySelector("img").src="assets/images/modules/"+uid+"/"+imgsrc;
         }
         clone.getElementById("imgdiv").classList.add('clone');
         imagediv.appendChild(clone)

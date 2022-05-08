@@ -6,14 +6,14 @@ $(document).ready(function()
     //document.querySelector("#uid").value=uid;
     $.ajax({
         type: "GET",
-        url: "/data/moduledata/"+uid+".json",
+        url: "data/moduledata/"+uid+".json",
         //url: "https://yjjcoolcool.github.io/solutional/data/modules.json",
         success: function (response) {
             document.getElementById("loading").remove();
             displayModuleData(response);
             $.ajax({
                 type: "GET",
-                url: "/data/modules.json",
+                url: "data/modules.json",
                 success: function (response) {
                     Object.keys(response).forEach(element=>{
                         if (response[element]['uid']===uid){

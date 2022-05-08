@@ -11,7 +11,7 @@ $(document).ready(function()
     if (!localfile) {
         $.ajax({
             type: "GET",
-            url: "/data/modules.json",
+            url: "data/modules.json",
             success: function (response) {
                 process(response);
             },

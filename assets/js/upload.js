@@ -6,6 +6,20 @@ window.addEventListener("dragover", (e) => {
 window.addEventListener("drop", (e) => {
     e.preventDefault();
     document.getElementById("upload").classList.remove('showdragdrop');
+    fileEvent(e);
+    //if (files) {
+    //}
+});
+
+window.addEventListener("dragleave", (e) => {
+    document.getElementById("upload").classList.remove('showdragdrop');
+});
+
+document.getElementById("file").addEventListener('change', (e) => {
+  fileEvent(e);
+});
+
+function fileEvent(e){
     var dropfile =  e.dataTransfer || (e.originalEvent && e.originalEvent.dataTransfer);
     var files = e.target.files || (dropfile && dropfile.files);
     if (files[0].type!="application/json"){
@@ -20,13 +34,7 @@ window.addEventListener("drop", (e) => {
         sessionStorage.setItem('localfilename', files[0].name);
         storeFileAndRedirect(files[0]);
     }
-    //if (files) {
-    //}
-});
-
-window.addEventListener("dragleave", (e) => {
-    document.getElementById("upload").classList.remove('showdragdrop');
-});
+}
 
 function storeFileAndRedirect(file) {
     let reader = new FileReader();

@@ -1,0 +1,87 @@
+[
+    {
+        "name": "LP1",
+        "questions": [
+            {
+                "question": "What is a valid security concern with the user's access permissions to a website being stored in a cookie?",
+                "type": 1,
+                "options": [
+                    "It is unsafe, the cookie should be stored in the HTTP response body.",
+                    "It is unsafe, the cookie should be stored in the HTTP request body",
+                    "[]The cookie can be modified directly from within the browser.",
+                    "The cookie can be modified directly from within the web server"
+                ]
+            },
+            {
+                "question": "What could be a reason that a user of a particular website keeps seeing the HTTP 503 error code being shown?",
+                "type": 1,
+                "options": [
+                    "The user's browser has sent too many query parameters",
+                    "The user's browser needs maintenance to update itself",
+                    "[]The server is operating at or close to 100% capacity",
+                    "The server encountered a runtime bug in its code"
+                ]
+            },
+            {
+                "question": "Which is the most secure method to generate a CSRF token?",
+                "type": 1,
+                "options": [
+                    "From a Pseudorandom Number Generator (PRNG) algorithm",
+                    "[]From a True Random Number Generator (TRNG) source",
+                    "From a randomly generated PHPSESSID value",
+                    "From a system's timestamp in milliseconds"
+                ]
+            },
+            {
+                "question": "Which HTTP method allows the user to upload large files, such as 2GB MP4 video files?",
+                "type": 1,
+                "options": [
+                    "HTTP TRACE",
+                    "HTTP PUT",
+                    "HTTP UPLOAD",
+                    "[]HTTP POST"
+                ]
+            },
+            {
+                "question": "What is the most effective method to prevent SQLi attacks?",
+                "type": 1,
+                "options": [
+                    "[]Use prepared statement calls provided by the language/platform",
+                    "Remove SQL keywords like INSERT and UPDATE",
+                    "Replace each special character with a dot \".\" character",
+                    "Strip all single-quote and double-quote characters"
+                ]
+            },
+            {
+                "question": "What is the result of calling mysqli_real_escape_string() on this email address: peter o'leary@gmail.com?",
+                "type": 1,
+                "options": [
+                    "peterolearygmailcom",
+                    "[]peter o\\'leary@gmail.com",
+                    "peter%2Eo%27leary@gmail.com",
+                    "peter\\o\\'leary\\@gmail.com"
+                ]
+            },
+            {
+                "question": "Which statement correctly describes the code below? $keyword=$_GET['keyword']);",
+                "type": 1,
+                "options": [
+                    "$keyword is a serialized object",
+                    "$keyword is a parameter",
+                    "[]$keyword is a variable",
+                    "$keyword is a function"
+                ]
+            },
+            {
+                "question": "Where are persistent cookies located?",
+                "type": 1,
+                "options": [
+                    "[]A database file on the client browser",
+                    "A configuration file on the client browser",
+                    "A flat file record on the web server",
+                    "A database table on the web server"
+                ]
+            }
+        ]
+    }
+]

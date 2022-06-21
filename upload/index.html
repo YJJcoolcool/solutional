@@ -45,11 +45,13 @@
             Warning: Questions that use images will not load their images!
         </div>
         <div id="upload" class="text-center">
-            <label for="file" id="fileuploadlabel">Drag & drop a file from your computer, or upload manually:</label>
-            <br>
-            <br>
-            <input type="file" id="file" accept=".json">
-            <br>
+            <form name="uploadForm">
+                <label for="file" id="fileuploadlabel">Drag & drop a file from your computer, or upload manually:</label>
+                <br>
+                <br>
+                <input type="file" id="file" accept=".json" onchange="storeFileAndRedirect(document.forms['uploadForm']['file'].files[0])">
+                <br>
+            </form>
         </div>
     </div>
 </body>

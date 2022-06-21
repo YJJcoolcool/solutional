@@ -59,7 +59,7 @@
                     "peterolearygmailcom",
                     "[]peter o\\'leary@gmail.com",
                     "peter%2Eo%27leary@gmail.com",
-                    "peter\\o\\'leary\\@gmail.com"
+                    "peter\\ o\\'leary\\@gmail.com"
                 ]
             },
             {
@@ -80,6 +80,111 @@
                     "A configuration file on the client browser",
                     "A flat file record on the web server",
                     "A database table on the web server"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "LP2",
+        "questions": [
+            {
+                "question": "Which Burp Suite mode systematically goes through payload lists in parallel (e.g., user1/pass1, user2/pass2, etc.)?",
+                "type": 1,
+                "options": [
+                    "[]Pitchfork",
+                    "Sniper",
+                    "Battering Ram",
+                    "Cluster Bomb"
+                ]
+            },
+            {
+                "question": "@`wotf file is used in HTTP Basic Authentication to store user login credentials?",
+                "type": 1,
+                "options": [
+                    ".htconfig",
+                    ".htdigest",
+                    ".htaccess",
+                    "[].htpasswd"
+                ]
+            },
+            {
+                "question": "@`wotf is the most effective security measure to reduce the possibility of a session-sniffing hijacking attack?",
+                "type": 1,
+                "options": [
+                    "Generate a new session ID on every page",
+                    "Implement user-IP check on the client",
+                    "Generate a new session ID on every login",
+                    "Implement transport security check on the server"
+                ]
+            },
+            {
+                "question": "@`wotf is true about HTTP Digest Authentication?",
+                "type": 1,
+                "options": [
+                    "The nonce is not included in the hash for all qop settings",
+                    "[]The password is included in the hash for all qop settings",
+                    "The cnonce is not included in the hash for all qop settings",
+                    "The qop itself is not included in the hash even if qop=auth"
+                ]
+            },
+            {
+                "question": "@`wotf is the most common secure authentication method used by online banking websites?",
+                "type": 1,
+                "options": [
+                    "[]Form-Based Authentication with TLS and 2FA",
+                    "Digest Authentication with TLS and 2FA",
+                    "Negotiate Authentication with SSL and 2FA",
+                    "Web Authentication (WebAuthn) with 2FA"
+                ]
+            },
+            {
+                "question": "Which part of the HTTP protocol is used to set cookie information which is to be retained by the client's browser?",
+                "type": 1,
+                "options": [
+                    "HTTP request body",
+                    "HTTP request header",
+                    "HTTP response body",
+                    "[]HTTP response header"
+                ]
+            },
+            {
+                "question": "Which part of the web architecture ensures that HTTP session info can be restored upon a server crash?",
+                "type": 1,
+                "options": [
+                    "Web firewall tier",
+                    "Application tier",
+                    "Presentation tier",
+                    "[]Database tier"
+                ]
+            },
+            {
+                "question": "Which is the best recommended time to generate a new session ID to guard against session fixation attacks?",
+                "type": 1,
+                "options": [
+                    "Only after a successful user logout from the website",
+                    "After any change is detected in the browser cookie",
+                    "[]Before every user login to the website",
+                    "Before every transaction request sent to the server"
+                ]
+            },
+            {
+                "question": "Which attack method relies primarily on self-modifying code within a webpage using un-validated inputs?",
+                "type": 1,
+                "options": [
+                    "Reflected XSS attack",
+                    "[]DOM-based XSS attack",
+                    "Session fixation attack",
+                    "Session hijacking attack"
+                ]
+            },
+            {
+                "question": "What is the resulting number of output characters after a 9-character string is converted to Base64?",
+                "type": 1,
+                "options": [
+                    "[]12",
+                    "14",
+                    "18",
+                    "10"
                 ]
             }
         ]

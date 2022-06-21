@@ -15,10 +15,6 @@ window.addEventListener("dragleave", (e) => {
     document.getElementById("upload").classList.remove('showdragdrop');
 });
 
-document.getElementById("file").addEventListener('change', (e) => {
-  fileEvent(e);
-});
-
 function fileEvent(e){
     var dropfile =  e.dataTransfer || (e.originalEvent && e.originalEvent.dataTransfer);
     var files = e.target.files || (dropfile && dropfile.files);

@@ -13,6 +13,14 @@
         "tags":["RP","SOI"],
         "uid":"68a705d1f2aad1593a818964779d5668"
     },
+    "C371 - Application Security":{
+        "tags":["RP","SOI"],
+        "uid":"3fe472037f90c0aae138a02f9c9f3426"
+    },
+    "C377 - Security Information Management":{
+        "tags":["RP","SOI"],
+        "uid":"5c64edfdac940f7ff51d4f176ed5c6d1"
+    },
     "C335 - Internetworking Security":{
         "tags":["RP","SOI"],
         "uid":"d5199733bbe364d51a521e46e03c8366"

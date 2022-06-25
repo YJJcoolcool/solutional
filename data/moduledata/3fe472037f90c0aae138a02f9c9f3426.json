@@ -114,7 +114,7 @@
                     "Generate a new session ID on every page",
                     "Implement user-IP check on the client",
                     "Generate a new session ID on every login",
-                    "Implement transport security check on the server"
+                    "[]Implement transport security check on the server"
                 ]
             },
             {

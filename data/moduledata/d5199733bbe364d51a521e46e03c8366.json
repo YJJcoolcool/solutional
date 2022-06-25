@@ -1,0 +1,376 @@
+[
+    {
+        "name": "LP1",
+        "questions": [
+            {
+                "question": "What is the minimum system configuration to setup a multi-tiered DMZ network?",
+                "type": 1,
+                "options": [
+                    "1 x 3-legged firewall",
+                    "2 x 3-legged firewall",
+                    "1 x 2-legged firewall",
+                    "[]2 x 2-legged firewall"
+                ]
+            },
+            {
+                "question": "@`wotf zones should NOT contain user traffic originating from within the LAN zone?",
+                "type": 1,
+                "options": [
+                    "[]MGT zone",
+                    "DMZ zone",
+                    "SRV zone",
+                    "WAN zone"
+                ]
+            },
+            {
+                "question": "Which traffic type should not be allowed to/from the SRV zone (which contains various Windows and Linux servers)?",
+                "type": 1,
+                "options": [
+                    "[]Inbound RDP from DMZ zone",
+                    "Outbound HTTPS to windowsupdate website",
+                    "Outbound NTP to 0.pool.ntp.org",
+                    "Inbound SSH from VPN zone"
+                ]
+            },
+            {
+                "question": "Which is the best reason to use PowerShell instead of the GUI to configure Windows host-based firewalls?",
+                "type": 1,
+                "options": [
+                    "PowerShell commands have the same options as GUI screens",
+                    "[]Many Windows Server machines in the cloud to be configured",
+                    "All the servers are all Windows Server Datacenter edition",
+                    "None of the above"
+                ]
+            },
+            {
+                "question": "@`wotf does NOT describe software firewalls?",
+                "type": 1,
+                "options": [
+                    "Can be deployed as virtual machines",
+                    "Can be host-based or bundled with the operating system",
+                    "[]Contain network accelerators for increased performance",
+                    "Usually consumer-grade but may also be enterprise-grade firewalls"
+                ]
+            },
+            {
+                "question": "What is the expected LAN-WAN performance through 2 NGFW firewalls of the same type in series, compared to 1 firewall?",
+                "type": 1,
+                "options": [
+                    "[]No significant change within the operating limits of the firewalls",
+                    "Depends on user traffic load originating from management zone",
+                    "Decreased significantly from traffic passing through 2 network layers",
+                    "Increased significantly with the 2 firewalls working together"
+                ]
+            },
+            {
+                "question": "What is an operational advantage of using ufw compared to iptables to configure an Ubuntu Linux firewall?",
+                "type": 1,
+                "options": [
+                    "[]ufw rules are persistent by default compared to iptables rules",
+                    "ufw uses bash scripting but iptables does not support it",
+                    "ufw can insert new firewall rules but not iptables",
+                    "ufw uses 'proto' as a parameter but iptables uses '-p'"
+                ]
+            },
+            {
+                "question": "The ufw command 'sudo ufw delete 4' will..",
+                "type": 1,
+                "options": [
+                    "move the previous rule downwards to position 4",
+                    "remove the 4th and move the 3rd rule downwards to position 4",
+                    "[]remove the 4th rule and move the 5th rule upwards to position 4",
+                    "move the 3rd rule and swap it with the 4th rule"
+                ]
+            },
+            {
+                "question": "Which of these machines (servers / workstations) should be placed within the DMZ zone of a small-to-medium sized company?",
+                "type": 1,
+                "options": [
+                    "HRD (Human Resource Department) database server",
+                    "Windows Active Directory Server",
+                    "[]Corporate web server",
+                    "User laptops and workstations"
+                ]
+            },
+            {
+                "question": "@`wotf statements is TRUE about stateful inspection firewalls?",
+                "type": 1,
+                "options": [
+                    "[]They maintain an internal table of outbound to inbound traffic",
+                    "They are the simplest and therefore the fastest firewall type",
+                    "They carry out all filtering functions at the application layer",
+                    "All of the above"
+                ]
+            },
+            {
+                "question": "What is another name for 'first line of defence'?",
+                "type": 3,
+                "options": [
+                    "Perimeter Defence",
+                    "Perimetre Defence",
+                    "Perimeter Defense"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "LP2",
+        "questions": [
+            {
+                "question": "What is the main reason for the performance increase of Next Generation Firewalls compared to previous firewall types?",
+                "type": 1,
+                "options": [
+                    "[]Parallel processing in hardware",
+                    "Control pane used for firewall management",
+                    "Traffic identification and classification",
+                    "Content scanning for threats and malware"
+                ]
+            },
+            {
+                "question": "What is the primary difference between a Virtual Wire and a Tap interface?",
+                "type": 1,
+                "options": [
+                    "A Virtual Wire interface cannot be assigned a zone",
+                    "A Tap interface cannot process UDP traffic",
+                    "[]A Tap interface does not block traffic",
+                    "A Virtual Wire interface routes traffic"
+                ]
+            },
+            {
+                "question": "Which statement is FALSE about firewall security policies?",
+                "type": 1,
+                "options": [
+                    "[]Logging must be enabled for default security policies",
+                    "Security policies use zones to regulate and log traffic",
+                    "Security policies are evaluated in a top-down manner",
+                    "Security policies are generally bi-directional"
+                ]
+            },
+            {
+                "question": "What is the resulting throughput if a broken cable is plugged into one port of an aggregate interface with three 1.0 Gbps ports?",
+                "type": 1,
+                "options": [
+                    "0.5 Gbps due to link aggregation overhead",
+                    "[]2.0 Gbps due to link redundancy",
+                    "3.0 Gbps as the traffic passes through the other 2 ports",
+                    "0.0 Gbps as all the ports must work together"
+                ]
+            },
+            {
+                "question": "Which interface type does NOT affect the traffic flow and allows an out-of-band IDS (Intrusion Detection System) to be set up?",
+                "type": 1,
+                "options": [
+                    "Loopback",
+                    "Layer 2",
+                    "[]Tap",
+                    "Layer 3"
+                ]
+            },
+            {
+                "question": "How many zones are eventually created, if they are defined in the order: srv1, srv2, Srv1, Srv2, SRV1, SRV2, srv1, srv2, SRV3?",
+                "type": 1,
+                "options": [
+                    "5",
+                    "[]7",
+                    "9",
+                    "3"
+                ]
+            },
+            {
+                "question": "Who can remove a firewall configuration lock?",
+                "type": 1,
+                "options": [
+                    "Only the administrator who set it",
+                    "Only a superuser, unless it expires by itself after 24 hours",
+                    "[]Only the administrator who set it or a superuser",
+                    "Only a superuser"
+                ]
+            },
+            {
+                "question": "Which of these items does NOT require a commit operation on the firewall after a change has been made?",
+                "type": 1,
+                "options": [
+                    "Address Object",
+                    "Security Policy",
+                    "Virtual Router",
+                    "[]Dynamic Block List"
+                ]
+            },
+            {
+                "question": "When will traffic logs be created and shown for universal-type firewall rules, by default?",
+                "type": 1,
+                "options": [
+                    "[]Just after the session has ended",
+                    "Both at the start and end of the session",
+                    "Just before the session has started",
+                    "Just as the session is starting"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "LP3",
+        "questions": [
+            {
+                "question": "Which of these statements is correct about Static NAT as compared to the Source NAT with Dynamic IP translation mode?",
+                "type": 1,
+                "options": [
+                    "One is used for bidirectional traffic, the other blocks all traffic",
+                    "Both are used for outbound traffic",
+                    "Both are used for inbound traffic",
+                    "[]One is used for inbound traffic, the other is used for outbound traffic"
+                ]
+            },
+            {
+                "question": "Which network address translation mode is effectively the same as Palo Alto Network's Source NAT with Dynamic IP?",
+                "type": 1,
+                "options": [
+                    "Dynamic IP and Port NAT",
+                    "[]Dynamic NAT",
+                    "Static IP",
+                    "Port Address Translation"
+                ]
+            },
+            {
+                "question": "Which is NOT a valid syslog transport mode?",
+                "type": 1,
+                "options": [
+                    "Unsecured UDP without SSL",
+                    "Secured TCP with SSL",
+                    "[]Secured UDP with SSL",
+                    "Unsecured TCP without SSL"
+                ]
+            },
+            {
+                "question": "Marvel Pte Ltd has a pool of private IP addresses but limited number of public IP addresses for Internet browsing Which technology can Marvel Pie Lad use to ensure users occupy only ONE public IP address?",
+                "type": 1,
+                "options": [
+                    "Dynamic NAT",
+                    "Dynamic Port",
+                    "[]Port Address Translation (PAT)",
+                    "Static NAT"
+                ]
+            },
+            {
+                "question": "The ___ translation mode is most likely to be used to direct external customers to a web server in the DMZ",
+                "type": 1,
+                "options": [
+                    "[]Static NAT",
+                    "Dynamic NAT",
+                    "Port Address Translation (PAT)",
+                    "Dynamic Port"
+                ]
+            },
+            {
+                "question": "Which is NOT a valid Palo Alto system log severity?",
+                "type": 1,
+                "options": [
+                    "Informational",
+                    "[]Average",
+                    "High",
+                    "Low"
+                ]
+            },
+            {
+                "question": "When a Destination Network Address Translation is being performed, the destination in the corresponding Security Policy Rule should be configured with..",
+                "type": 1,
+                "options": [
+                    "[]Post Network Address Translation destination zone and Pre-Network Address Translation IP address",
+                    "Pre-Network Address Translation destination zone and Pre-Network Address Translation IP address",
+                    "Pre-Network Address Translation destination zone and Post-Network Address Translation IP address",
+                    "Post Network Address Translation source zone and Post-Network Address Translation IP address"
+                ]
+            },
+            {
+                "question": "How many LAN IP addresses can be mapped to a single WAN IP address under the DIPP translation mode without oversubscription?",
+                "type": 1,
+                "options": [
+                    "16384",
+                    "[]64512",
+                    "65536",
+                    "32768"
+                ]
+            },
+            {
+                "question": "Which source address translation type will allow multiple devices to share a single translated source address while using a single NAT Policy rule?",
+                "type": 1,
+                "options": [
+                    "Static IP",
+                    "Bi-directional",
+                    "[]Dynamic IP and Port",
+                    "Dynamic IP"
+                ]
+            },
+            {
+                "question": "How can a Palo Alto firewall be configured to send syslog messages in a format compatible with non-standard syslog servers?",
+                "type": 1,
+                "options": [
+                    "Enable support for non-standard syslog messages under device management",
+                    "[]Create a custom log format under the syslog server profile",
+                    "Check the custom-format in the syslog server profile",
+                    "Select a non-standard syslog server profile"
+                ]
+            },
+            {
+                "question": "Which of the IPv4 network classes below do NOT support the notion of separation of network and host identifiers?",
+                "type": 1,
+                "options": [
+                    "C only",
+                    "B only",
+                    "[]Both D and E",
+                    "Both B and C"
+                ]
+            },
+            {
+                "question": "What is the maximum expected offset from the 'correct time' on a client machine after a successful NTP time synchronization?",
+                "type": 1,
+                "options": [
+                    "[]0.1 seconds",
+                    "1.1 seconds",
+                    "0.0 seconds",
+                    "1.0 seconds"
+                ]
+            },
+            {
+                "question": "Why was TTL changed to Hop Limit in the IPv6 header?",
+                "type": 1,
+                "options": [
+                    "Using TTL had caused increased load on firewall processing",
+                    "Firewalls were already blocking the TTL field at each hop",
+                    "[]Routers were already subtracting the TTL, field at each hop",
+                    "Using Hop Limit reduces ping response times"
+                ]
+            },
+            {
+                "question": "@`wotf logs can be exported to a syslog server?",
+                "type": 1,
+                "options": [
+                    "Devices IP addresses log",
+                    "[]Host Information Profile (HIP)",
+                    "IIS Data log",
+                    "Windows Event log"
+                ]
+            },
+            {
+                "question": "Which 2 threat log levels are considered 'high-priority' and should be monitored closely by the security staff?",
+                "type": 1,
+                "options": [
+                    "Priority-1 and Priority-2 Levels",
+                    "[]Critical and High Levels",
+                    "Critical and Severe Levels",
+                    "High and Severe Levels"
+                ]
+            },
+            {
+                "question": "The infrastructure team is conducting a test with a LAN client that will create up to 3,600,000 connections at any point in time. How many external IPv4 addresses are required using outbound DIPP NAT on a Palo Alto firewall?",
+                "type": 1,
+                "options": [
+                    "56",
+                    "54",
+                    "59",
+                    "52"
+                ]
+            }
+        ]
+    }
+]

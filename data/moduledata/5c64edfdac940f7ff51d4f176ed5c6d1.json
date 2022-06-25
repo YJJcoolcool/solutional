@@ -1,0 +1,177 @@
+[
+    {
+        "name": "LP1",
+        "questions": [
+            {
+                "question": "@`wotf Windows Audit Event ID should be monitored for any changes to account information and account lockouts? (choose all that applies)",
+                "type": 1,
+                "options": [
+                    "4624",
+                    "4625",
+                    "[]4723",
+                    "[]4740",
+                    "4663"
+                ]
+            },
+            {
+                "question": "What information is/are gathered by the CSIRT when determining the scope of a security incident?",
+                "type": 1,
+                "options": [
+                    "[]The networks, systems, and applications affected by an incident",
+                    "The amount of time and resources needed to handle an incident",
+                    "The strategies and procedures used for incident containment",
+                    "The processes used to preserve evidence",
+                    "The users affected by an incident"
+                ]
+            },
+            {
+                "question": "The IT administrator of a company wants to implement stronger security policy. @`wotf should NOT be in the security policies?",
+                "type": 1,
+                "options": [
+                    "Provide secure communications between the overseas office and headquarters.",
+                    "[]Implement certificate services on all offices.",
+                    "Protecting employee data on portable computers.",
+                    "[]Provide two-factor authentication.",
+                    "Ensuring secure authentication."
+                ]
+            },
+            {
+                "question": "@`wotf approach(es) should security professionals take to mitigate a compromised system during the Actions on Objectives step as defined by the Cyber Kill Chain model?",
+                "type": 1,
+                "options": [
+                    "Build detections for the behaviour of known malware.",
+                    "Train web developers for securing code.",
+                    "[]Detect data exfiltration, lateral movement, and unauthorized credential usage.",
+                    "[]Perform forensic analysis of endpoints for rapid triage.",
+                    "Collect malware files and metadata for future analysis."
+                ]
+            },
+            {
+                "question": "@`wotf approach(es) can an organization use to help block potential exploitations of a system?",
+                "type": 3,
+                "options": [
+                    "Analyse the infrastructure path used for delivery.",
+                    "[]Audit endpoints to forensically determine origin of exploit.",
+                    "Collect email and web logs for forensic reconstruction.",
+                    "Conduct full malware analysis.",
+                    "[]Conduct employee awareness training and email testing."
+                ]
+            },
+            {
+                "question": "@`wotf is/are an event?",
+                "type": 1,
+                "options": [
+                    "Obtaining confidential data and threatens to release these data publicly if the organization does not pay a designated sum of money.",
+                    "A ransomware infection that encrypts all sensitive files in the company.",
+                    "[]Access to sensitive data in share drives through an open connection.",
+                    "A user performing unauthorized downloading of multiple software using the corporate network.",
+                    "Exposing sensitive information online through illegal peer-to-peer file sharing services."
+                ]
+            },
+            {
+                "question": "@`wotf is/are part of a security analyst job functions?",
+                "type": 1,
+                "options": [
+                    "Report incident to police.",
+                    "Create security incident response policy.",
+                    "[]Perform steps to remediation the incident.",
+                    "Inform the CEO of a security breach.",
+                    "Declare an incident."
+                ]
+            },
+            {
+                "question": "@`wotf activiti(es)would be conducted as part of the containment phase?",
+                "type": 3,
+                "options": [
+                    "Compare recent backups with a current backup to remove malware that an attacker could use to regain access.",
+                    "[]Segregate compromised systems to another network segment.",
+                    "Verify the most recent system backup in case the system needs to be rebuilt later.",
+                    "[]Change DNS entries to direct traffic away from the compromised system network.",
+                    "Run tools used to gather information about an external attacker from an uncompromised system on the network."
+                ]
+            },
+            {
+                "question": "According to NIST standards, which incident response is/are responsible for coordinating an incident response with other stakeholders to minimize the damage of an incident?",
+                "type": 1,
+                "options": [
+                    "Human Resources.",
+                    "Legal department.",
+                    "[]Management.",
+                    "IT support.",
+                    "Media department."
+                ]
+            },
+            {
+                "question": "How can a security information and event management system in an SOC be used to help personnel fight against security threats?",
+                "type": 3,
+                "options": [
+                    "By filtering network traffic.",
+                    "[]By collecting and filtering data.",
+                    "By authenticating users to network resources.",
+                    "By encrypting communications to remote sites.",
+                    "[]By detecting and classifying threats ."
+                ]
+            },
+            {
+                "question": "Which two(2) of the following Windows Audit Event ID should be monitored for failed logins and account lockout? (Choose all that applies)",
+                "type": 3,
+                "options": [
+                    "4624.",
+                    "[]4625.",
+                    "4634.",
+                    "4733.",
+                    "[]4740."
+                ]
+            },
+            {
+                "question": "@`wotf approach(es) should security professionals take to mitigate a compromised system during the Actions on Objectives step as defined by the Cyber Kill Chain model? ",
+                "type": 3,
+                "options": [
+                    "Build detections for the behaviour of known malware.",
+                    "Train web developers for securing code.",
+                    "[]Detect data exfiltration, lateral movement and unauthorized credential usage.",
+                    "[]Perform forensic analysis of endpoints for rapid triage.",
+                    "Collect malware files and metadata for future analysis."
+                ]
+            }
+        ]
+    },
+    {
+        "name": "LP2",
+        "questions": [
+            {
+                "question": "John the security analyst wants to be alerted when there are: \n > 3 failed login attempts within 10 minutes from the same server. \n > Encrypted file transfer activities in the network. \n Which of the following Event Stream Analysis rule type(s) would be the most effective to deploy? Select all that applies. ",
+                "type": 3,
+                "options": [
+                    "[]Simple filter rule",
+                    "[]Event window rule",
+                    "Followed by rule",
+                    "Application filter rule",
+                    "Network truncate rule"
+                ]
+            },
+            {
+                "question": "@`wotf is/are true about filtering rules?",
+                "type": 3,
+                "options": [
+                    "Events are retained in the memory when no conditions are matched.",
+                    "[]Do not take up memory since the events are not retained beyond the inital evaluation",
+                    "Depends on the memory of data per event to generate an alert.",
+                    "[]Are used to eliminate the IP addresses and destinations with the heaviest traffic",
+                    "Evaluate a set of events over a time with events matches a condition"
+                ]
+            },
+            {
+                "question": "@`wotf is/are false with regards to Event Windows Rule?",
+                "type": 3,
+                "options": [
+                    "Each matching events is retained in the memory until the time window has passed.",
+                    "The memory consumption is dependent on the amount of data per event",
+                    "[]Evaluates a chain of incoming events to determine if the sequence of events matches a condition.",
+                    "Evaluates a set of events over a time period with events matching a condition",
+                    "Events are removed from the time window after a specific time when it fails to meet the threshold."
+                ]
+            }
+        ]
+    }
+]

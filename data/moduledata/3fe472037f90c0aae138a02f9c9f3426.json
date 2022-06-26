@@ -118,6 +118,16 @@
                 ]
             },
             {
+                "question": "Which types of attacks can be prevented by assigning a new session ID each time a user logs in?",
+                "type": 1,
+                "options": [
+                    "Session stealing attacks",
+                    "[]Session fixation attacks",
+                    "Session sniffing attacks",
+                    "Session riding attacks"
+                ]
+            },
+            {
                 "question": "@`wotf is true about HTTP Digest Authentication?",
                 "type": 1,
                 "options": [
@@ -185,6 +195,41 @@
                     "14",
                     "18",
                     "10"
+                ]
+            },
+            {
+                "question": "@`wotf HTTP authentication types should be the easiest for an attacker to attack?",
+                "type": 1,
+                "options": [
+                    "Basic authentication over port 443",
+                    "Digest authentication over port 80",
+                    "[]Form-based authentication over port 80",
+                    "NTLM v2 authentication over port 443"
+                ]
+            },
+            {
+                "question": "A user needs to login securely. Which of these is NOT a secure method, and hence should NOT be recommended?",
+                "type": 1,
+                "options": [
+                    "2-way TLS with mutual authentication",
+                    "1-way TLS with server-side certificate",
+                    "[]Server-configured Basic Authentication",
+                    "Site-to-site IPSEC VPN with AD integration"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "LP3",
+        "questions": [
+            {
+                "question": "@`wotf is supported by both XML and HTML?",
+                "type": 1,
+                "options": [
+                    "[]Nested elements",
+                    "Arbitrary element names",
+                    "Arbitrary attribute names",
+                    "Elements to describe arbitrary data structures"
                 ]
             }
         ]

@@ -81,6 +81,56 @@
                     "A flat file record on the web server",
                     "A database table on the web server"
                 ]
+            },
+            {
+                "question": "A URL shortener service such as http://bit.lyuses the following status code to send the user’s browser to the correct URL:",
+                "type": 1,
+                "options": [
+                    "HTTP 200",
+                    "[]HTTP 301",
+                    "HTTP 404",
+                    "HTTP 500"
+                ]
+            },
+            {
+                "question": "Some people with names like Bill O’Reilly may have problems with online transactions. Which type of code will remove certain characters from their names and cause such problems?",
+                "type": 1,
+                "options": [
+                    "Transient cookie deletion code",
+                    "Persistent cookie deletion code",
+                    "Anti-session management code",
+                    "[]Anti-SQL injection code"
+                ]
+            },
+            {
+                "question": "@`wotf is a primary security concern in a 2-tier architecture design?",
+                "type": 1,
+                "options": [
+                    "The database server is unable to scale horizontally",
+                    "The database server is unable to scale vertically",
+                    "[]The database server is located together with the application server",
+                    "The database server is located outside of the application server"
+                ]
+            },
+            {
+                "question": "What makes DOM-based XSS attacks more difficult to detect?",
+                "type": 1,
+                "options": [
+                    "They make use of scripts stored in persistent storage",
+                    "They steal the user’s session cookie and sends it to the attacker",
+                    "[]They make use of scripts from unsanitized web server responses",
+                    "They run on the browser to defeat server-based detection"
+                ]
+            },
+            {
+                "question": "What happens when a cookie expires?",
+                "type": 1,
+                "options": [
+                    "[]It is removed directly from the browser’s memory and storage",
+                    "It is removed directly from the server’s memory and storage",
+                    "It is removed only after its timeout period on the server",
+                    "It is removed only after a handshake between the browser and server"
+                ]
             }
         ]
     },
@@ -216,6 +266,26 @@
                     "[]Server-configured Basic Authentication",
                     "Site-to-site IPSEC VPN with AD integration"
                 ]
+            },
+            {
+                "question": "During the HTTP Digest Authentication phase, which of the following will always be sent from the browser to the server?",
+                "type": 1,
+                "options": [
+                    "only the hashed password",
+                    "[]hashed username, password (and nonce, depending on algorithm)",
+                    "“content-type= application/x-www-form-urlencoded” header",
+                    "“content-language = en-us” header"
+                ]
+            },
+            {
+                "question": "Which authentication method will cause the largest impact across multiple services worldwide when compromised?",
+                "type": 1,
+                "options": [
+                    "Form-based authentication",
+                    "Negotiate authentication",
+                    "[]OpenID",
+                    "WebAuthn API"
+                ]
             }
         ]
     },
@@ -230,6 +300,16 @@
                     "Arbitrary element names",
                     "Arbitrary attribute names",
                     "Elements to describe arbitrary data structures"
+                ]
+            },
+            {
+                "question": "@`wotf links is the most secure method to submit malware samples via a REST web service call?",
+                "type": 1,
+                "options": [
+                    "http://cloud.wildfire.com/api/submit",
+                    "https://cloud.wildfire.com/api/submit",
+                    "http://cloud.wildfire.com/api/submit?api_key=S12a6Hqwd6q6n4Zo",
+                    "[]https://cloud.wildfire.com/api/submit?api_key=S12a6Hqwd6q6n4Zo"
                 ]
             }
         ]

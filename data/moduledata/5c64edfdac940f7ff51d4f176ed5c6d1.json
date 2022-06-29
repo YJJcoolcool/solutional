@@ -25,7 +25,7 @@
                 ]
             },
             {
-                "question": "The IT administrator of a company wants to implement stronger security policy. @`wotf should NOT be in the security policies?",
+                "question": "The IT administrator of a company wants to implement stronger security policy. @`wotf SHOULD NOT be in the security policies?",
                 "type": 2,
                 "options": [
                     "Provide secure communications between the overseas office and headquarters.",

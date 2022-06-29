@@ -145,7 +145,7 @@
                 ]
             },
             {
-                "question": "@`wotf activities are part of an incident response Containment step following a malware detection on a single workstation?",
+                "question": "@`wotf activities are part of an Incident Response Containment step following a malware detection on a single workstation?",
                 "type": 2,
                 "options": [
                     "[]disconnect workstation from the network",

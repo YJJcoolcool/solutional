@@ -74,7 +74,7 @@
                 "options": [
                     "Report incident to police.",
                     "Create security incident response policy.",
-                    "[]Perform steps to remediation the incident.",
+                    "[]Perform steps to remediate the incident.",
                     "Inform the CEO of a security breach.",
                     "Declare an incident."
                 ]
@@ -148,10 +148,10 @@
                 "question": "@`wotf activities are part of an incident response Containment step following a malware detection on a single workstation?",
                 "type": 2,
                 "options": [
-                    "disconnect workstation from the network",
+                    "[]disconnect workstation from the network",
                     "leave the workstation in normal operation status for monitoring activities",
                     "remove the malware from the system",
-                    "obtain an image of the infected workstation",
+                    "[]obtain an image of the infected workstation",
                     "gather information of the infected workstation"
                 ]
             },

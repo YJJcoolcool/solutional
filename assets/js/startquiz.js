@@ -126,9 +126,12 @@ function nextQn(){
     document.getElementById('nextqn').innerHTML='Waiting for answer...';
     document.getElementById('qnnum').innerHTML='Question '+(currentqn+1)+" of "+numqn;
     var question = qnlist[currentqn]['question'];
+    // Shortforms
     for (var i=0; i<shortforms.length/2; i++){
         question = question.replace("@`"+shortforms[i*2],shortforms[i*2+1])
     }
+    // Newlines
+    question = question.replaceAll("\n","<br>")
     document.querySelector("#question").innerHTML = question;
     options = qnlist[currentqn]['options'];
 

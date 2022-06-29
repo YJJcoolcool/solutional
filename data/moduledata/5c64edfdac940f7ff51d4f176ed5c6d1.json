@@ -137,7 +137,7 @@
         ]
     },
     {
-        "name": "LP2",
+        "name": "LP2 (Part 1)",
         "questions": [
             {
                 "question": "John the security analyst wants to be alerted when there are activities related to: \n > 3 failed login attempts within 10 minutes from the same server. \n > Encrypted file transfer activities in the network. \n Which of the following Event Stream Analysis rule type(s) would be the most effective to deploy? Select all that applies. ",
@@ -184,25 +184,26 @@
                 ]
             },
             {
-                "question": "Correlation Rule is used when ? Select the best choice",
+                "question": "Correlation Rule is used when...",
                 "type": 2,
                 "options": [
                     "you want to be notified when a single event occurs .",
                     "you want to create parsers and feeds.",
                     "[]you want to be notified when an event occurs within a time frame.",
-                    "[]you want to be notified about multiple events occurs within a time frame.",
-                    "[]you want to validate and detect for compliance violation."
+                    "[]you want to be notified about multiple events occurring within a time frame.",
+                    "[]you want to validate and detect for compliance violation.",
+                    "you want to create a security policy"
                 ]
             },
             {
-                "question": "Which of the following statement(s) describe the TOR Network",
+                "question": "@`wotf statements describe a TOR Network?",
                 "type": 2,
                 "options": [
-                    "TOR network is used to securely connect to a remote network over an unsecure link.",
-                    "[]TOR network provides anonymous browsing and routing.",
-                    "TOR network can be easily discovered by using google search.",
-                    "[]Attackers use TOR network to conceal identities and online activity.",
-                    "TOR network can be accessed by any web browser."
+                    "TOR networks are used to securely connect to a remote network over an unsecure link.",
+                    "[]TOR networks provide anonymous browsing and routing.",
+                    "TOR networks can easily be discovered by using Google search.",
+                    "[]Attackers use TOR networks to conceal identities and online activity.",
+                    "A TOR network can be accessed by any web browser."
                 ]
             }
         ]

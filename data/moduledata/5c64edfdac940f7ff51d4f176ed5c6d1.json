@@ -179,7 +179,7 @@
         ]
     },
     {
-        "name": "LP2 (Part 1)",
+        "name": "LP2 Quiz-1",
         "questions": [
             {
                 "question": "You have been tasked to extend the network for an enterprise. The networking, to be done in the new extension, requires different types of cables, training new skillsets and an appropriate networking policy that will be decided by you. Which phase of the incident handling process lifecycle is involved in your decision for deriving the networking policy?",
@@ -196,7 +196,7 @@
         ]
     },
     {
-        "name": "LP2 (Part 2)",
+        "name": "LP2 Quiz-2",
         "questions": [
             {
                 "question": "A security analyst wants to be alerted when there are activities related to:\n >RDP connections to the file server.\n > Encrypted file transfer activities in the network.\n @`wotf Event Stream Analysis rule type(s) would be the most effective to deploy? Select all that applies.",

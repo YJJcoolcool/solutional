@@ -372,5 +372,245 @@
                 ]
             }
         ]
+    },
+    {
+        "name": "LP4",
+        "questions": [
+            {
+                "question": "Which RADIUS policy which when configured, will give higher priority to certain traffic types - for example Google and Youtube?",
+                "type": 1,
+                "options": [
+                    "[]Authorization",
+                    "Accounting",
+                    "Auditing",
+                    "Authentication"
+                ]
+            },
+            {
+                "question": "Which of these specifies wireless transmission standards as opposed to security aspects such as authentication or authorization?",
+                "type": 1,
+                "options": [
+                    "RADIUS",
+                    "802.1X",
+                    "[]802.11",
+                    "EAP-TLS"
+                ]
+            },
+            {
+                "question": "Where is the shared secret key for a RADIUS server specified when setting up a Captive Portal?",
+                "type": 1,
+                "options": [
+                    "Authentication Profile",
+                    "[]Server Profile",
+                    "Authentication Sequence",
+                    "Captive Portal Settings"
+                ]
+            },
+            {
+                "question": "Which item is sent across the network to prove the identity of a connecting user?",
+                "type": 1,
+                "options": [
+                    "Server certificate",
+                    "Certificate Authority (CA) certificate",
+                    "[]Client certificate",
+                    "Client private key"
+                ]
+            },
+            {
+                "question": "Which of the following cannot be added to an existing Application Group?",
+                "type": 1,
+                "options": [
+                    "[]Security Policy",
+                    "Nested Application Group",
+                    "Application",
+                    "Application Filter"
+                ]
+            },
+            {
+                "question": "Which zone should have User-ID enabled for occasional visitors to the company to access the internet?",
+                "type": 1,
+                "options": [
+                    "LAN",
+                    "WAN",
+                    "VPN",
+                    "[]GUEST"
+                ]
+            },
+            {
+                "question": "Which of the following is a mandatory setting when defining a custom App-ID?",
+                "type": 1,
+                "options": [
+                    "Used by Malware",
+                    "Evasive",
+                    "[]Technology",
+                    "Pervasive"
+                ]
+            },
+            {
+                "question": "Which is a characteristic of the regular expression pattern string used in a custom App-ID?",
+                "type": 1,
+                "options": [
+                    "The pattern string must be no more than 7 bytes",
+                    "The pattern string is exactly 7 bytes",
+                    "[]The pattern string is case-sensitive",
+                    "The pattern string requires the firewall PCAP to be enabled"
+                ]
+            },
+            {
+                "question": "Which of the following does NOT require a firewall commit when a new application is added under it?",
+                "type": 1,
+                "options": [
+                    "[]Application Filter",
+                    "Application Group",
+                    "Nested Application Group",
+                    "Security Policy"
+                ]
+            },
+            {
+                "question": "What port on the wifi router, when used as an authenticator, should be connected to a RADIUS authentication server?",
+                "type": 1,
+                "options": [
+                    "USB",
+                    "GUEST",
+                    "WAN",
+                    "[]LAN"
+                ]
+            },
+            {
+                "question": "Which service type should be used to block all traffic identified under the file-sharing sub-category?",
+                "type": 1,
+                "options": [
+                    "service-http",
+                    "application-default",
+                    "[]any",
+                    "none of the options (create a custom service)"
+                ]
+            },
+            {
+                "question": "Which of the following is true about the server certificate specified in the Captive Portal response page?",
+                "type": 1,
+                "options": [
+                    "[]The user's browser/system must trust the same CA",
+                    "The user's browser/system must import the server session key",
+                    "The user's browser/system must belong to a different PKI",
+                    "The user's browser/system must import the server private key"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "LP5",
+        "questions": [
+            {
+                "question": "Which of the following security profile types should the DNS sinkhole be configured under?",
+                "type": 1,
+                "options": [
+                    "URL Filtering security profile",
+                    "Vulnerability Protection security profile",
+                    "[]Anti-Spyware security profile",
+                    "Antivirus security profile"
+                ]
+            },
+            {
+                "question": "Which GlobalProtect connection method allows Single Sign-On (SSO) integration with a Windows login event?",
+                "type": 1,
+                "options": [
+                    "Post-logon",
+                    "[]User-logon",
+                    "Pre-logon",
+                    "On-demand"
+                ]
+            },
+            {
+                "question": "How does the administrator configure the GlobalProtect agent's client configuration to only use SSL mode for login?",
+                "type": 1,
+                "options": [
+                    "[]Uncheck the IPSec option",
+                    "Check the Allow Authentication with User Credentials option",
+                    "Uncheck the No direct access to local network option",
+                    "Check the SSL/TLS option"
+                ]
+            },
+            {
+                "question": "Whose password may be used at a URL Filtering response page to allow the user to proceed to a normally disallowed website?",
+                "type": 1,
+                "options": [
+                    "Password of super admin account under Device > Administrators",
+                    "Specified continue password under Device > Setup > Content-ID",
+                    "Password of policy admin account under Device > Administrators",
+                    "[]Specified override password under Device> Setup > Content-ID"
+                ]
+            },
+            {
+                "question": "Which of these addresses is a valid setting for the GlobalProtect agent to initiate the VPN connection?",
+                "type": 1,
+                "options": [
+                    "https://vpn.company.com.sg",
+                    "202.112.24.100-202.112.24.103",
+                    "[]portal.company.com.sg",
+                    "https://202.112.24.100"
+                ]
+            },
+            {
+                "question": "Which of the following is NOT a valid statement regarding custom anti spyware signatures?",
+                "type": 1,
+                "options": [
+                    "They use the same regular expression rules as for custom App-ID's",
+                    "[]They are evaluated on firewall traffic before the security policy",
+                    "They work under an assigned anti-spyware security profile",
+                    "They have a minimum pattern matching length of 7 bytes/chars"
+                ]
+            },
+            {
+                "question": "Which function is GlobalProtect Portal NOT responsible for? (I mark)",
+                "type": 1,
+                "options": [
+                    "Keep track of internal/external gateways provided to users",
+                    "Manage and update GlobalProtect client configuration",
+                    "Authenticate GlobalProtect users",
+                    "[]Establish connection with the GobalProtect gateway"
+                ]
+            },
+            {
+                "question": "Which firewall log contains the record of a website being blocked by aparticular URL Category disallowed under a security policy?",
+                "type": 1,
+                "options": [
+                    "URL filtering log",
+                    "Threat log",
+                    "[]Traffic log",
+                    "System log"
+                ]
+            },
+            {
+                "question": "Which GlobalProtect component contains the list of external gateways that the user can connect to?",
+                "type": 1,
+                "options": [
+                    "[]GlobalProtect Portal",
+                    "GlobalProtect Gateway",
+                    "GlobalProtect Large Scale VPN (LSVPN)",
+                    "GlobalProtect Agent"
+                ]
+            },
+            {
+                "question": "Which firewall log shows that a VPN user had followed a link to a phishing website that could contain malicious scripts? A",
+                "type": 1,
+                "options": [
+                    "Traffic log",
+                    "[]Threat log",
+                    "System log",
+                    "Configuration log"
+                ]
+            },
+            {
+                "question": "Where can the configuration screen be found to assign the DHCP addresses to be provisioned to VPN clients?",
+                "type": 1,
+                "options": [
+                    "Network, Interfaces, Tunnel, IPv4",
+                    "GlobalProtect Gateway, Agent, Network Services",
+                    "[]GlobalProtect Gateway, Agent, Client Settings",
+                    "GlobalProtect Portal, Agent, Internal"
+                ]
+            }
+        ]
     }
 ]

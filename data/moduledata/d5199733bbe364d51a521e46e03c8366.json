@@ -365,10 +365,115 @@
                 "question": "The infrastructure team is conducting a test with a LAN client that will create up to 3,600,000 connections at any point in time. How many external IPv4 addresses are required using outbound DIPP NAT on a Palo Alto firewall?",
                 "type": 1,
                 "options": [
-                    "56",
+                    "[]56",
                     "54",
                     "59",
                     "52"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "MSA",
+        "questions": [
+            {
+                "question": "@`wotf statement is TRUE about stateful inspection firewalls?",
+                "type": 1,
+                "options": [
+                    "They maintain an external table of inbound traffic only",
+                    "They operate on OSI layers 1 to 7",
+                    "[]They combine aspects of packet filtering, circuit level and application level gateways",
+                    "They are the simplest and therefore the fastest firewall type"
+                ]
+            },
+            {
+                "question": "@`wotf can a firewall be used for?",
+                "type": 1,
+                "options": [
+                    "Block social engineering attacks",
+                    "Safeguard users using weak passwords",
+                    "Block internal attacks",
+                    "[]Function similar to a proxy"
+                ]
+            },
+            {
+                "question": "Which is an advantage of using Host-based Firewalls?",
+                "type": 1,
+                "options": [
+                    "[]Allow host-specific rules or logging",
+                    "Able to secure large networks",
+                    "No flexibility in cloud environments",
+                    "No mobility for roaming devices"
+                ]
+            },
+            {
+                "question": "@`wotf statement is correct about catch all rules?",
+                "type": 1,
+                "options": [
+                    "It can be deleted and replaced with specific rules",
+                    "It can be moved to the 1st rule before specific rules",
+                    "[]It will match for any source and destination",
+                    "Logs cannot be captured for all its traffic"
+                ]
+            },
+            {
+                "question": "Which field is not required when creating a new security policy rule?",
+                "type": 1,
+                "options": [
+                    "Source",
+                    "Destination",
+                    "Action",
+                    "[]Description"
+                ]
+            },
+            {
+                "question": "Which statement is FALSE about firewall security policies?",
+                "type": 1,
+                "options": [
+                    "Security policies are evaluated in a top-down manner",
+                    "Logging must be manually enabled for default security policies",
+                    "[]Security policies are generally uni-directional",
+                    "Action must be either allow or deny a traffic"
+                ]
+            },
+            {
+                "question": "The infrastructure team is conducting a test with a LAN client that will create up to 1,472,000 connections at any point in time. How many external IPv4 addresses are required using outbound DIPP NAT on a Palo Alto firewall?",
+                "type": 1,
+                "options": [
+                    "20",
+                    "21",
+                    "22",
+                    "[]23"
+                ]
+            },
+            {
+                "question": "Which source NAT type will allow multiple devices to share a single translated source address while using a single NAT Policy rule?",
+                "type": 1,
+                "options": [
+                    "Dynamic IP and Port",
+                    "Dynamic IP",
+                    "Bi-directional",
+                    "Static IP"
+                ]
+            },
+            {
+                "question": "@`wotf statements is correct about Network Address Translation (NAT) policies and Security policies?",
+                "type": 1,
+                "options": [
+                    "Both NAT and Security policies will apply the first rule that matches the traffic",
+                    "Both NAT and Security policies can allow or deny a packet",
+                    "[]NAT policy is processed first before Security policy",
+                    "NAT policy is not required in a Layer 2 network"
+                ]
+            },
+            {
+                "question": "Destination NAT is required in which scenario?",
+                "type": 1,
+                "options": [
+                    "[]To translate the address of inbound traffic",
+                    "To translate the address of outbound traffic",
+                    "To translate the address of traffic within the same zone",
+                    "To translate the address of both inbound and outbound traffic"
                 ]
             }
         ]
@@ -417,7 +522,7 @@
                 ]
             },
             {
-                "question": "Which of the following cannot be added to an existing Application Group?",
+                "question": "@`wotf cannot be added to an existing Application Group?",
                 "type": 1,
                 "options": [
                     "[]Security Policy",
@@ -437,7 +542,7 @@
                 ]
             },
             {
-                "question": "Which of the following is a mandatory setting when defining a custom App-ID?",
+                "question": "@`wotf is a mandatory setting when defining a custom App-ID?",
                 "type": 1,
                 "options": [
                     "Used by Malware",
@@ -457,7 +562,7 @@
                 ]
             },
             {
-                "question": "Which of the following does NOT require a firewall commit when a new application is added under it?",
+                "question": "@`wotf does NOT require a firewall commit when a new application is added under it?",
                 "type": 1,
                 "options": [
                     "[]Application Filter",
@@ -487,7 +592,7 @@
                 ]
             },
             {
-                "question": "Which of the following is true about the server certificate specified in the Captive Portal response page?",
+                "question": "@`wotf is true about the server certificate specified in the Captive Portal response page?",
                 "type": 1,
                 "options": [
                     "[]The user's browser/system must trust the same CA",
@@ -502,7 +607,7 @@
         "name": "LP5",
         "questions": [
             {
-                "question": "Which of the following security profile types should the DNS sinkhole be configured under?",
+                "question": "@`wotf security profile types should the DNS sinkhole be configured under?",
                 "type": 1,
                 "options": [
                     "URL Filtering security profile",
@@ -552,7 +657,7 @@
                 ]
             },
             {
-                "question": "Which of the following is NOT a valid statement regarding custom anti spyware signatures?",
+                "question": "@`wotf is NOT a valid statement regarding custom anti spyware signatures?",
                 "type": 1,
                 "options": [
                     "They use the same regular expression rules as for custom App-ID's",

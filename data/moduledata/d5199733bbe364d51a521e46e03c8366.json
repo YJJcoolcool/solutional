@@ -765,12 +765,7 @@
                     "[]GlobalProtect Gateway, Agent, Client Settings",
                     "GlobalProtect Portal, Agent, Internal"
                 ]
-            }
-        ]
-    },
-    {
-        "name": "LP5",
-        "questions": [
+            },
             {
                 "question": "A website is presenting an RSA 2048-bit key. By default, what will the size of the key in the certificate sent by the firewall to the client be when doing SSL Decryption?",
                 "type": 1,
@@ -779,6 +774,46 @@
                     "1024 bits",
                     "[]2048 bits",
                     "4096 bits"
+                ]
+            },
+            {
+                "question": "The GlobalProtect agent authenticates against the...",
+                "type": 1,
+                "options": [
+                    "External gateway firewall",
+                    "Internet gateway firewall",
+                    "[]Portal firewall",
+                    "Satellite firewall"
+                ]
+            },
+            {
+                "question": "The GlobalProtect portal configuration should typically start?",
+                "type": 1,
+                "options": [
+                    "Tunnel interface with IP from corresponding pool",
+                    "[]Layer 3 interface with corresponding interface IP",
+                    "Tunnel interface with corresponding interface IP",
+                    "Layer 3 interface with IP from corresponding pool"
+                ]
+            },
+            {
+                "question": "Single sign-on (SSO) with a GlobalProtect agent is established using ___ connection method",
+                "type": 1,
+                "options": [
+                    "On-demand",
+                    "Pre-logon",
+                    "[]User-logon",
+                    "Post-logon"
+                ]
+            },
+            {
+                "question": "A VPN user visited an undesirable website in the gambling category. This activity can be seen in the ...",
+                "type": 1,
+                "options": [
+                    "Threat log",
+                    "System Log",
+                    "Configuration Log",
+                    "Traffic Log"
                 ]
             }
         ]

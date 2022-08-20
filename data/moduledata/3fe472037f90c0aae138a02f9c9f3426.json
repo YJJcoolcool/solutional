@@ -290,6 +290,161 @@
         ]
     },
     {
+        "name": "MSA",
+        "questions": [
+            {
+                "question": "Which is a valid domain setting for a cookie?",
+                "type": 1,
+                "options": [
+                    "http://example.com",
+                    "https://example.com",
+                    "[]example.com",
+                    "admin@example.com"
+                ]
+            },
+            {
+                "question": "What HTTP status code will be received if the web application encounters an error resulting in a runtime exception?",
+                "type": 1,
+                "options": [
+                    "HTTP 400",
+                    "HTTP 503",
+                    "[]HTTP 500",
+                    "HTTP 405"
+                ]
+            },
+            {
+                "question": "Which enhancements to a form-based authentication web page will make it hardest for a hacker to attack?",
+                "type": 1,
+                "options": [
+                    "[]Switching to SSL/TLS on port 443 and adding 2FA",
+                    "Adding a SHA1 hash to the password field while using 1FA",
+                    "Setting the \"secure\" flag when creating the session cookie",
+                    "Splitting the username and password fields into 2 web pages"
+                ]
+            },
+            {
+                "question": "@`wotf statements correctly describes the code below?\n$st->bindParam(':userID', $userID);",
+                "type": 1,
+                "options": [
+                    "$st is a function",
+                    "[]:userID is a parameter",
+                    "$userID cannot contain special characters",
+                    "bindParam is an object"
+                ]
+            },
+            {
+                "question": "What is a characteristic of the HTTP 302 redirect status which differs from HTTP 301?",
+                "type": 1,
+                "options": [
+                    "[]Indicates the redirect location may be changed",
+                    "Indicates the redirect location must not be changed",
+                    "Indicates browsers can update their bookmarks to the new location",
+                    "Indicates browsers should show the home page if the redirect fails"
+                ]
+            },
+            {
+                "question": "@`wotf statements about XML or HTML is correct?",
+                "type": 1,
+                "options": [
+                    "In HTML, you can make use of arbitrary element names",
+                    "In XML, you can repeat elements in an array, but not in HTML",
+                    "[]In XML, you can define and use new attribute names as required",
+                    "In HTML, you can nest elements of varying types, but not in XML"
+                ]
+            },
+            {
+                "question": "Which is NOT a valid combination?",
+                "type": 1,
+                "options": [
+                    "REST transaction with JSON request and JSON response",
+                    "REST transaction with JSON request and XML response",
+                    "SOAP transaction with XML request and XML response",
+                    "[]SOAP transaction with XML request and JSON response"
+                ]
+            },
+            {
+                "question": "Which part of the web architecture is responsible for creating the HTTP session?",
+                "type": 1,
+                "options": [
+                    "Web firewall tier",
+                    "Presentation tier",
+                    "Database tier",
+                    "[]Application tier"
+                ]
+            },
+            {
+                "question": "Which is the best way to avoid session-sniffing attacks?",
+                "type": 1,
+                "options": [
+                    "Set the cookie expiry timing to 43,200 minutes",
+                    "[]Enable SSL/TLS in the server configuration",
+                    "Clear the session ID on every web page click",
+                    "Spoof a random user-agent string"
+                ]
+            },
+            {
+                "question": "What is Base64 used for, given that it is not able to encrypt data?",
+                "type": 1,
+                "options": [
+                    "[]To allow binary data to be transmitted in text format",
+                    "To escape input fields within SQL statements",
+                    "To transmit passwords and other sensitive information",
+                    "To replace checksums and older hash algorithms"
+                ]
+            },
+            {
+                "question": "How do DOM-based XSS attacks bypass detection by network security devices?",
+                "type": 1,
+                "options": [
+                    "They can clear the session ID to erase the user's identity",
+                    "They can logout the user before proceeding with the attack",
+                    "They can send UDP instead of TCP web traffic",
+                    "[]They can run on the browser without network communication"
+                ]
+            },
+            {
+                "question": "What is an alternative way to store detailed user preferences for a website if a cookie is limited to only 4KB of data?",
+                "type": 1,
+                "options": [
+                    "Store it in a persistent cookie",
+                    "[]Store it in the user session",
+                    "Store it in the browser's memory",
+                    "Store it in the server's memory"
+                ]
+            },
+            {
+                "question": "What happens in a session fixation attack?",
+                "type": 1,
+                "options": [
+                    "The attacker guesses the victim's password using brute force",
+                    "[]The victim uses a sesssion ID known to the attacker",
+                    "The victim unknowingly sends the attacker his own session ID",
+                    "The attacker sniffs the victim's session cookie"
+                ]
+            },
+            {
+                "question": "What is the process for the server to verify that a CSRF token is valid?",
+                "type": 1,
+                "options": [
+                    "[]Checks its session token against the user token from the form",
+                    "Checks its own server time against the time inside the user token",
+                    "Checks the session ID decrypted using the user token from the form",
+                    "Checks that the token matches the next generated random number"
+                ]
+            },
+            {
+                "question": "Which is NOT a key characteristic of a Reflected XSS attack compared to a Persistent XSS attack?",
+                "type": 1,
+                "options": [
+                    "Reflected XSS requires initial testing of the script code",
+                    "[]Reflected XSS requires script code to be written to a database",
+                    "Reflected XSS requires some form of social engineering",
+                    "Reflected XSS requires a lack of validation in the website code"
+                ]
+            }
+        ]
+    },
+    {
         "name": "LP3",
         "questions": [
             {
@@ -310,6 +465,241 @@
                     "https://cloud.wildfire.com/api/submit",
                     "http://cloud.wildfire.com/api/submit?api_key=S12a6Hqwd6q6n4Zo",
                     "[]https://cloud.wildfire.com/api/submit?api_key=S12a6Hqwd6q6n4Zo"
+                ]
+            },
+            {
+                "question": "What could be a possible alternative to using a HTTP GET parameter to transmit an API key from a client to a web service?",
+                "type": 1,
+                "options": [
+                    "PHP $_SESSION[] variable",
+                    "HTTP response header x",
+                    "HTTP status code X",
+                    "[]HTTP request header"
+                ]
+            },
+            {
+                "question": "Which SOAP specification allows missing transaction data to be re sent, similar to TCP's packet re-send capability?",
+                "type": 1,
+                "options": [
+                    "WS-Federation",
+                    "WS-Atomic Transaction",
+                    "[]WS-ReliableMessaging",
+                    "WS-Security: SOAP Message Security"
+                ]
+            },
+            {
+                "question": "Which is NOT a valid REST request verb?",
+                "type": 1,
+                "options": [
+                    "GET",
+                    "[]RESPOND",
+                    "POST",
+                    "DELETE"
+                ]
+            },
+            {
+                "question": "What are the database operations that map to HTTP POST, GET, PUT and DELETE in a REST web service call?",
+                "type": 1,
+                "options": [
+                    "ODBC",
+                    "ACID",
+                    "RAIN",
+                    "[]CRUD"
+                ]
+            },
+            {
+                "question": "Which of these web attacks is more likely to be encountered for a web service that is called from machine-to-machine?",
+                "type": 1,
+                "options": [
+                    "[]SQL Injection attack",
+                    "Reflected XSS (Cross-Site Scripting) attack",
+                    "CSRF (Cross-Site Request Forgery) attack",
+                    "Stored XSS (Cross-Site Scripting) attack"
+                ]
+            },
+            {
+                "question": "Why is DCOM not widely used for Internet web services?",
+                "type": 1,
+                "options": [
+                    "[]It does not support Unix or Linux-based servers",
+                    "It is too old as it was created over 20 years ago",
+                    "It is being released under a restrictive GPL open-source license",
+                    "It does not support binary transfers as it is a text-based standard"
+                ]
+            },
+            {
+                "question": "Which component of the URL represents the resource in this REST web service call? https://www.zoowell.com/gpu/6950xt?tx-chk_stock&qty-2&api_keysd3x445g",
+                "type": 1,
+                "options": [
+                    "[]/gpu/6950xt",
+                    "zoowell.com",
+                    "https://www.zoowell.com",
+                    "tx-chk_stock&qty=2&api_key-sd3x4i5g"
+                ]
+            },
+            {
+                "question": "What is the main reason that XSS attacks do NOT directly apply to a client program which is calling a public web service API?",
+                "type": 1,
+                "options": [
+                    "The server does not have a JavaScript execution engine",
+                    "The server does not have a HTML rendering engine",
+                    "[]The client does not have a JavaScript execution engine",
+                    "The client does not have a HTML rendering engine"
+                ]
+            },
+            {
+                "question": "How do you describe \"tasks\" which is in JSON format as below? {\"tasks\":{[\"t\":13,\"2\":14]}}",
+                "type": 1,
+                "options": [
+                    "An array containing an object which is an array of 2 key/value pairs",
+                    "[]An object containing an object which is an array of 2 key/value pairs",
+                    "An object containing an array which is an object of 2 key/value pairs",
+                    "An array containing an array which is an object of 2 key/value pairs"
+                ]
+            },
+            {
+                "question": "Which web tier returns a HTTP 404 status in the response header when aresource cannot be found on the specified path?",
+                "type": 1,
+                "options": [
+                    "Backend",
+                    "Frontend",
+                    "Presentation",
+                    "[]Application"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "LP4",
+        "questions": [
+            {
+                "question": "Which key is used to decrypt the session key that was sent from the browser to the server for subsequent encrypted communication?",
+                "type": 1,
+                "options": [
+                    "Server public key",
+                    "[]Server private key",
+                    "Client public key",
+                    "Client private key"
+                ]
+            },
+            {
+                "question": "Which SSL/TLS cipher suite in the list below is the strongest combination?",
+                "type": 1,
+                "options": [
+                    "EDH-RSA-DES-CBC3-SHA",
+                    "DHE-RSA-AES128-SHA",
+                    "RC4-SHA",
+                    "[]ECDHE-RSA-AES128-GCM-SHA256"
+                ]
+            },
+            {
+                "question": "Which account would be the owner of a shell obtained after a successful command injection attack on the web server?",
+                "type": 1,
+                "options": [
+                    "Domain administrator",
+                    "Root user",
+                    "[]Service account",
+                    "Sudo user"
+                ]
+            },
+            {
+                "question": "Why is AES-128 commonly used on SSL/TLS websites? (I mark)",
+                "type": 1,
+                "options": [
+                    "Provides the best performance when used with client certificates",
+                    "[]Provides good performance and security",
+                    "Provides the best possible security",
+                    "Provides fast hashing speeds"
+                ]
+            },
+            {
+                "question": "What setting specifies how long the server waits for a client to complete the sending of its request before closing the connection?",
+                "type": 1,
+                "options": [
+                    "[]TimeOut",
+                    "KeepAliveTimeout",
+                    "MaxClients",
+                    "ServerTokens"
+                ]
+            },
+            {
+                "question": "Which web attack type is prevented via code to retrieve a file from the filesystem and display it with sanitization instead of inlining?",
+                "type": 1,
+                "options": [
+                    "Cross-Site Request Forgery",
+                    "Remote File Inclusion",
+                    "Command Injection",
+                    "[]Local File Inclusion"
+                ]
+            },
+            {
+                "question": "Which account should have ownership and write permissions to the Apache binary to reduce the likelihood of malicious changes?",
+                "type": 1,
+                "options": [
+                    "ntuser",
+                    "daemon",
+                    "[]root",
+                    "super-sudo"
+                ]
+            },
+            {
+                "question": "Which website is likely unable to be scanned by ssllabs.com for SSL/TLS certificate security issues?",
+                "type": 1,
+                "options": [
+                    "[]https://hr-portal.asrc.com.sg",
+                    "https://customer-support.logitech.com",
+                    "https://web-api.grab.com",
+                    "https://drive.google.com"
+                ]
+            },
+            {
+                "question": "Which HTTP encryption protocol came after SSL v3.0?",
+                "type": 1,
+                "options": [
+                    "[]TLS 1.0",
+                    "SSLv3.1",
+                    "TLS 3.1",
+                    "SSLv3.0.1"
+                ]
+            },
+            {
+                "question": "Which statement best describes web shells?",
+                "type": 1,
+                "options": [
+                    "Their source code has to be compiled to run",
+                    "[]They are able to access relational databases",
+                    "They are always written as PHP scripts",
+                    "They are active only within the uploads folder"
+                ]
+            },
+            {
+                "question": "What does disabling allow_url_fopen in PHP help to prevent?",
+                "type": 1,
+                "options": [
+                    "Command injection attacks",
+                    "File upload attacks",
+                    "LFI (Local File Inclusion) attacks",
+                    "[]RFI (Remote File Inclusion) attacks"
+                ]
+            },
+            {
+                "question": "Which configuration file should be edited to prevent the disclosure of PHP version information?",
+                "type": 1,
+                "options": [
+                    "php.cfg",
+                    "[]php.ini",
+                    "httpd.conf",
+                    "httpd.config"
+                ]
+            },
+            {
+                "question": "Which parameter determines how many numeric characters are required in a Linux password with pam_cracklib?",
+                "type": 1,
+                "options": [
+                    "ucredit",
+                    "ocredit",
+                    "[]dcredit",
+                    "acredit"
                 ]
             }
         ]
